@@ -12,6 +12,26 @@
   {
     "kind": 2,
     "language": "javascript",
-    "value": "createCanvas(800,600);\r\n\r\nfunction background() {\r\n    background(0,0,0);\r\n}\r\n\r\nfunction moon() {\r\n    noStroke();\r\nfill(229,229,229);\r\nellipse(100,500, 358);\r\n\r\nfill(201,201,201);\r\nellipse(80, 380, 45);\r\nellipse(160, 430, 60);\r\nellipse(20, 480, 70);\r\nellipse(130, 540, 80);\r\n\r\nbeginShape();\r\nvertex(268,440);\r\nbezierVertex(247,454, 247, 507, 278,505);\r\nbezierVertex(281, 478, 273, 457, 268,440);\r\nendShape();\r\n}\r\n\r\nfunction draw() {\r\n    background();\r\n    moon();\r\n}"
+    "value": "function setup() {\r\n    window.createCanvas(800, 600);\r\n    background(0,0,0);\r\n  }\r\n\r\n\r\nfunction moon() {\r\n    noStroke();\r\n    fill(229,229,229);\r\n    ellipse(100,500, 358);\r\n\r\n    fill(201,201,201);\r\n    ellipse(80, 380, 45);\r\n    ellipse(160, 430, 60);\r\n    ellipse(20, 480, 70);\r\n    ellipse(130, 540, 80);\r\n\r\n    beginShape();\r\n    vertex(268,440);\r\n    bezierVertex(247,454, 247, 507, 278,505);\r\n    bezierVertex(281, 478, 273, 457, 268,440);\r\n    endShape();\r\n}\r\n\r\nfunction draw() {\r\n    moon();\r\n}"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Start Screen - Make the Steamy Things\r\nA little creative addition with bezierCurves and darker colors"
+  },
+  {
+    "kind": 2,
+    "language": "javascript",
+    "value": "function steamyThings() {\r\n    noStroke();\r\n    fill(147, 33, 145, 160);\r\n    push();\r\n    beginShape();\r\n    vertex(0, 0);\r\n    vertex(430, 0);\r\n    bezierVertex(400, 60, 340, 70, 300, 60);\r\n    bezierVertex(270, 50, 250, 50, 220, 80);\r\n    bezierVertex(200, 100, 180, 100, 140, 90);\r\n    bezierVertex(100, 80, 50, 90, 0, 120);\r\n    endShape();\r\n    pop();\r\n\r\n    fill(225, 115, 39, 190);\r\n    push();\r\n    beginShape();\r\n    vertex(0, 40);\r\n    bezierVertex(10, 40, 30, 20, 28, 0);\r\n    vertex(255, 0);\r\n    bezierVertex(240,30, 220, 40, 195, 30);\r\n    bezierVertex(168,18,148, 25,140, 40);\r\n    bezierVertex(120, 65, 95,60,70, 50);\r\n    bezierVertex(40, 45, 25, 50, 0, 90);\r\n    endShape();\r\n    pop(); \r\n\r\n    fill(147, 33, 145, 160);\r\n    push();\r\n    beginShape();\r\n    vertex(800, 600);\r\n    vertex(800, 530);\r\n    bezierVertex(790, 540, 770, 530, 750, 550);\r\n    bezierVertex(730, 570, 680, 550, 670, 550);\r\n    bezierVertex(630, 540, 570, 560, 520, 600);\r\n    endShape();\r\n    pop();\r\n\r\n    fill(225, 115, 39, 190);\r\n    push();\r\n    beginShape();\r\n    vertex(580, 600);\r\n    bezierVertex(587, 580, 610, 570, 650, 578);\r\n    bezierVertex(676, 582, 700, 585, 721, 574);\r\n    bezierVertex(728, 570, 752, 565, 765, 580);\r\n    bezierVertex(770, 580, 792, 580, 800, 560);\r\n    vertex(800, 600);\r\n    endShape();\r\n    pop();\r\n}\r\n\r\nfunction draw() {\r\n    moon();\r\n    steamyThings();\r\n}"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Start Screen - Make the Night Sky\r\nAplly the code from Garrit :)"
+  },
+  {
+    "kind": 2,
+    "language": "javascript",
+    "value": "function nightSky() {\r\n    let stars = [];\r\n\r\nfor (let i = 0; i < 100; i++) {\r\n  const star = {\r\n    x: Math.floor(Math.random() * width),\r\n    y: Math.floor(Math.random() * height),\r\n    alpha: Math.random()\r\n  };\r\n\r\n  stars.push(star);\r\n}\r\n\r\nfunction draw() {\r\n  noStroke();\r\n  background(0, 0, 0);\r\n\r\n  for (let star of stars) {\r\n    fill(255, 255, 255, Math.abs(Math.sin(star.alpha)) * 255);\r\n    ellipse(star.x, star.y, 2);\r\n    star.alpha = star.alpha + 0.02;\r\n  }\r\n}\r\n}\r\n\r\nfunction draw() {\r\n    moon();\r\n    steamyThings();\r\n    nightSky();\r\n}"
   }
 ]
