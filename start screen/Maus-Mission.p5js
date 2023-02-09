@@ -1,0 +1,17 @@
+[
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Maus Mission\r\n\r\nStart Screen:\r\n1. Make the Moon\r\n2. Make the steamy things\r\n3. Make the night sky\r\n4. Make the Headline\r\n5. Make the explanation\r\n6. Add Name of the creator\r\n7. Make a Button to start\r\n8. connect the button to the game screen\r\n\r\nGame Screen:\r\n1. Make the Maus\r\n2. Make the Background\r\n3. Draw the Elefant\r\n4. Make the Elefant move from left to right\r\n5. Make a hitbox for both of them\r\n6. Create gravity for Maus\r\n7. Make jetpack power \r\n8. Make Fire for the jetpack\r\n9. Make conditions for winning and losing --> if you are faster than this speed then ...\r\n10. Game starts only when pressing the space bar\r\n11. connect the end of the game to the result screen\r\n\r\nResult screen\r\n1. Create the two different outcomes (Mission acomplished or failed)\r\n2. Add the Headlines\r\n3. Make a restart Button\r\n4. Connect the restart Button to the game screen\r\n\r\nAdditional Feature: Avoiding the Elefant while trying to land"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Start Screen - Make the Moon\r\nDraw a moon with greyish colors, still simplyfied"
+  },
+  {
+    "kind": 2,
+    "language": "javascript",
+    "value": "createCanvas(800,600);\r\n\r\nfunction background() {\r\n    background(0,0,0);\r\n}\r\n\r\nfunction moon() {\r\n    noStroke();\r\nfill(229,229,229);\r\nellipse(100,500, 358);\r\n\r\nfill(201,201,201);\r\nellipse(80, 380, 45);\r\nellipse(160, 430, 60);\r\nellipse(20, 480, 70);\r\nellipse(130, 540, 80);\r\n\r\nbeginShape();\r\nvertex(268,440);\r\nbezierVertex(247,454, 247, 507, 278,505);\r\nbezierVertex(281, 478, 273, 457, 268,440);\r\nendShape();\r\n}\r\n\r\nfunction draw() {\r\n    background();\r\n    moon();\r\n}"
+  }
+]
