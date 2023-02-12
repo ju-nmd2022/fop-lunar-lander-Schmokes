@@ -1,0 +1,142 @@
+[
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Maus Mission\r\n\r\nStart Screen:\r\n1. Make the Moon\r\n2. Make the steamy things\r\n3. Make the night sky\r\n4. Make the Headline\r\n5. Make the explanation\r\n6. Add Name of the creator\r\n7. Make a Button to start\r\n8. connect the button to the game screen\r\n\r\nGame Screen:\r\n1. Make the Maus\r\n2. Make the Background\r\n3. Draw the Elefant\r\n4. Make the Elefant move from left to right\r\n5. Make a hitbox for both of them\r\n6. Create gravity for Maus\r\n7. Make jetpack power \r\n8. Make Fire for the jetpack\r\n9. Make conditions for winning and losing --> if you are faster than this speed then ...\r\n10. Game starts only when pressing the space bar\r\n11. connect the end of the game to the result screen\r\n\r\nResult screen\r\n1. Create the two different outcomes (Mission acomplished or failed)\r\n2. Add the Headlines\r\n3. Add the Caracters\r\n4. Make a restart Button\r\n5. Connect the restart Button to the game screen\r\n\r\nAdditional Feature: Avoiding the Elefant while trying to land"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Start Screen - Make the Moon\r\nDraw a moon with greyish colors, still simplyfied"
+  },
+  {
+    "kind": 2,
+    "language": "javascript",
+    "value": "function setup() {\r\n    window.createCanvas(800, 600);\r\n    background(0,0,0);\r\n  }\r\n\r\n\r\nfunction moon() {\r\n    noStroke();\r\n    fill(229,229,229);\r\n    ellipse(100,500, 358);\r\n\r\n    fill(201,201,201);\r\n    ellipse(80, 380, 45);\r\n    ellipse(160, 430, 60);\r\n    ellipse(20, 480, 70);\r\n    ellipse(130, 540, 80);\r\n\r\n    beginShape();\r\n    vertex(268,440);\r\n    bezierVertex(247,454, 247, 507, 278,505);\r\n    bezierVertex(281, 478, 273, 457, 268,440);\r\n    endShape();\r\n}\r\n\r\nfunction draw() {\r\n    moon();\r\n}"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Start Screen - Make the Steamy Things\r\nA little creative addition with bezierCurves and darker colors"
+  },
+  {
+    "kind": 2,
+    "language": "javascript",
+    "value": "function steamyThings() {\r\n    noStroke();\r\n    fill(147, 33, 145, 160);\r\n    push();\r\n    beginShape();\r\n    vertex(0, 0);\r\n    vertex(430, 0);\r\n    bezierVertex(400, 60, 340, 70, 300, 60);\r\n    bezierVertex(270, 50, 250, 50, 220, 80);\r\n    bezierVertex(200, 100, 180, 100, 140, 90);\r\n    bezierVertex(100, 80, 50, 90, 0, 120);\r\n    endShape();\r\n    pop();\r\n\r\n    fill(225, 115, 39, 190);\r\n    push();\r\n    beginShape();\r\n    vertex(0, 40);\r\n    bezierVertex(10, 40, 30, 20, 28, 0);\r\n    vertex(255, 0);\r\n    bezierVertex(240,30, 220, 40, 195, 30);\r\n    bezierVertex(168,18,148, 25,140, 40);\r\n    bezierVertex(120, 65, 95,60,70, 50);\r\n    bezierVertex(40, 45, 25, 50, 0, 90);\r\n    endShape();\r\n    pop(); \r\n\r\n    fill(147, 33, 145, 160);\r\n    push();\r\n    beginShape();\r\n    vertex(800, 600);\r\n    vertex(800, 530);\r\n    bezierVertex(790, 540, 770, 530, 750, 550);\r\n    bezierVertex(730, 570, 680, 550, 670, 550);\r\n    bezierVertex(630, 540, 570, 560, 520, 600);\r\n    endShape();\r\n    pop();\r\n\r\n    fill(225, 115, 39, 190);\r\n    push();\r\n    beginShape();\r\n    vertex(580, 600);\r\n    bezierVertex(587, 580, 610, 570, 650, 578);\r\n    bezierVertex(676, 582, 700, 585, 721, 574);\r\n    bezierVertex(728, 570, 752, 565, 765, 580);\r\n    bezierVertex(770, 580, 792, 580, 800, 560);\r\n    vertex(800, 600);\r\n    endShape();\r\n    pop();\r\n}\r\n\r\nfunction draw() {\r\n    moon();\r\n    steamyThings();\r\n}"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Start Screen - Make the Night Sky\r\nAplly the code from Garrit :)"
+  },
+  {
+    "kind": 2,
+    "language": "javascript",
+    "value": "function nightSky() {\r\n    let stars = [];\r\n\r\nfor (let i = 0; i < 100; i++) {\r\n  const star = {\r\n    x: Math.floor(Math.random() * width),\r\n    y: Math.floor(Math.random() * height),\r\n    alpha: Math.random()\r\n  };\r\n\r\n  stars.push(star);\r\n}\r\n\r\nfunction draw() {\r\n  noStroke();\r\n  background(0, 0, 0);\r\n\r\n  for (let star of stars) {\r\n    fill(255, 255, 255, Math.abs(Math.sin(star.alpha)) * 255);\r\n    ellipse(star.x, star.y, 2);\r\n    star.alpha = star.alpha + 0.02;\r\n  }\r\n}\r\n}\r\n\r\nfunction draw() {\r\n    moon();\r\n    steamyThings();\r\n    nightSky();\r\n}"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Start Screen - Make the Headline\r\nMaus Mission is the name of the game "
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Start Screen - Make the Explanation\r\nYou contron the thrust with the space key and the game also start it with pressing it "
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Start Screeen - Add Name of the creator\r\nScmokes which is me is the creator, somewhere placed on the screen"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Start Screen - make the Button to start \r\nVisual button to start the game"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Start Screen - Connect the button to the game screen \r\nIf you press the button the screen changes to the game screen - look at video on how to create the different screens"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Game Screen - Make the Maus\r\nTake referenece from the internet picture - Sendung mit der Maus"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Game Screen - Make the background\r\nA landing space for the Maus on the Moon"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Game Screen - Draw the Elefant\r\nTake reference from the internet - Mission to the Moon"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Game Screen - Make the Elefant move from left to right and back\r\nWith variables change the position of the x position of the elefant "
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Game Screen - Make a hitbox for both of them \r\nFor refererence the code of Garrit, if the elefant touches maus then the game will be lost"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Game Screen - Create Gravity for Maus\r\nAccelerating speed to the ground (not linear)"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Game Screen - Make jetpack power\r\nWhile pressing the space key accelerating speed away from the gravity "
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Game Screen - Make the fire of the jetpack\r\nWhen pressing the space key the fire will be drawn"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Game Screen - Make conditions for winning and losing\r\n- If you are faster than this speed then you failed the Mission\r\n- If you touch the Elefant on the way down you failed the Mission\r\n- If you land with slow speed you accomplish the mission "
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Game Screen - Game starts only when pressing the space key\r\nThe maus will only start to fall when spressing the key for the first time"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Game Screen - Connect the conditions to the result screen\r\nWith boolean the results will show"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Result Screen - Create two different outcomes \r\nMission accomplished or failed - boolean"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Result Screen - Add the Headlines\r\nThe two different headlines placed in the screen"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Result Screen - Add the character\r\n- If you win the game the Maus will show up\r\n- If you lose the game the Elefant will show up"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Result Screen - Make the restart button \r\nCreate the Button to resatrt the game underneath the headline"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Result Button - Connect the Button to the game screen\r\nWhen pressing the button the game screen will show again and you can play again"
+  }
+]
