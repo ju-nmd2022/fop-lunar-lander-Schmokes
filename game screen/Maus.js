@@ -163,7 +163,6 @@ endShape();
 pop();
 
 //Astronaut Body
-//Body
 push();
 beginShape();
 vertex(140, 178);
@@ -176,7 +175,6 @@ vertex(140, 177);
 endShape();
 pop();
 
-//Brown detail
 push();
 beginShape();
 vertex(144, 195);
@@ -210,3 +208,40 @@ line(159, 241, 170, 244);
 line(158, 251, 169, 254);
 line(156, 260, 169, 263);
 line(156, 271, 169, 274);
+
+//Rigth Arm
+push();
+beginShape();
+vertex(238, 231);
+vertex(228, 228);
+bezierVertex(227, 215, 231, 206, 234, 203);
+vertex(240, 202);
+endShape();
+pop();
+
+push();
+beginShape();
+vertex(276, 218);
+bezierVertex(275, 214, 281, 204, 287, 206);
+bezierVertex(303, 210, 297, 237, 277, 235);
+bezierVertex(265, 231, 259, 230, 253, 230);
+bezierVertex(243, 232, 238, 231, 234, 229);
+bezierVertex(234, 217, 236, 204, 243, 202);
+bezierVertex(262, 209, 270, 210, 278, 209);
+endShape();
+pop();
+
+push();
+beginShape();
+vertex(254, 230);
+bezierVertex(253, 222, 253, 215, 258, 207);
+bezierVertex(261, 204, 259, 206, 272, 209);
+bezierVertex(267, 217, 265, 223, 267, 232);
+bezierVertex(261, 231, 259, 230, 254, 230);
+endShape();
+pop();
+
+line(261, 210, 259, 216);
+
+line(285, 212, 283, 217);
+line(283, 217, 283, 225);
