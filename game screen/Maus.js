@@ -213,7 +213,7 @@ line(139, 197, 142, 191);
 push();
 fill(233, 226, 210, 255);
 beginShape();
-vertex(162, 283);
+vertex(164, 283);
 vertex(159, 294);
 vertex(160, 298);
 vertex(156, 298);
