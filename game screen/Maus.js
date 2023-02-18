@@ -53,8 +53,8 @@ push();
 fill(0, 0, 0);
 beginShape();
 vertex(134, 124);
-bezierVertex(126, 124, 120, 135, 133, 147);
-bezierVertex(137, 140, 137, 135, 134, 124);
+bezierVertex(126, 122, 120, 135, 133, 147);
+bezierVertex(137, 140, 137, 133, 134, 124);
 endShape();
 pop();
 
