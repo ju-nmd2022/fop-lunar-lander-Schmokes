@@ -5,6 +5,7 @@ translate(200,200); */
 //HEAD
 //Ear left
 push();
+fill(133, 86, 53, 255);
 beginShape();
 vertex(225, 125);
 vertex(230, 95);
@@ -17,6 +18,7 @@ pop();
 
 //Ear right
 push();
+fill(133, 86, 53, 255);
 beginShape();
 vertex(235, 130);
 vertex(250, 106);
@@ -34,6 +36,7 @@ line(144, 125, 147, 99);
 
 //Head
 push();
+fill(234, 113, 50, 255);
 beginShape();
 vertex(159, 165);
 vertex(162, 195);
@@ -57,6 +60,7 @@ pop();
 
 //Eye left
 push();
+fill(255, 255, 255);
 beginShape();
 vertex(180, 116);
 bezierVertex(185, 117, 196, 110, 210, 115);
@@ -71,22 +75,24 @@ fill(0, 0, 0);
 beginShape();
 vertex(202, 124);
 vertex(191, 126);
-bezierVertex(187, 122, 188, 119, 191, 117);
+bezierVertex(187, 122, 188, 119, 192, 117);
 endShape();
 pop();
 
 push();
+fill(234, 113, 50, 255);
 beginShape();
 vertex(188, 114);
 vertex(202, 124);
-vertex(211, 118);
-vertex(209, 115);
+vertex(211, 121);
+vertex(212, 115);
 bezierVertex(203, 112, 199, 114, 188, 114);
 endShape();
 pop();
 
 //Eye right
 push();
+fill(255, 255, 255);
 beginShape();
 vertex(220, 133);
 bezierVertex(225, 140, 225, 145, 212, 151);
@@ -106,6 +112,7 @@ endShape();
 pop();
 
 push();
+fill(234, 113, 50, 255);
 beginShape();
 vertex(204, 130);
 bezierVertex(213, 135, 218, 140, 218, 149);
@@ -121,6 +128,7 @@ line(148, 147, 149, 170);
 
 //Jetpack
 push();
+fill(234, 113, 50, 255);
 beginShape();
 vertex(249, 191);
 vertex(260, 196);
@@ -133,6 +141,7 @@ pop();
 
 //Tail
 push();
+fill(0, 0, 0);
 beginShape();
 vertex(223, 279);
 bezierVertex(240, 286, 251, 288, 271, 285);
@@ -145,6 +154,7 @@ pop();
 
 //Helmet
 push();
+fill(207, 235, 238, 255);
 noFill();
 beginShape();
 vertex(142, 178);
@@ -164,6 +174,7 @@ pop();
 
 //Left Arm
 push();
+fill(233, 226, 210, 255);
 beginShape();
 vertex(91, 193);
 bezierVertex(91, 183, 88, 181, 85, 181);
@@ -177,6 +188,7 @@ endShape();
 pop();
 
 push();
+fill(133, 86, 53, 255);
 beginShape();
 vertex(98, 188);
 bezierVertex(98, 184, 102, 187, 105, 189);
@@ -199,6 +211,7 @@ line(139, 197, 142, 191);
 
 //Left Leg
 push();
+fill(233, 226, 210, 255);
 beginShape();
 vertex(162, 283);
 vertex(159, 294);
@@ -214,6 +227,7 @@ endShape();
 pop();
 
 push();
+fill(53, 62, 59, 255);
 beginShape();
 vertex(135, 307);
 vertex(145, 311);
@@ -224,6 +238,7 @@ endShape();
 pop();
 
 push();
+fill(133, 86, 53, 255);
 beginShape();
 vertex(156, 298);
 bezierVertex(149, 297, 141, 297, 132, 295);
@@ -239,6 +254,7 @@ line(133, 289, 140, 291);
 
 //Astronaut Body
 push();
+fill(233, 226, 210, 255);
 beginShape();
 vertex(140, 178);
 bezierVertex(186, 190, 221, 191, 253, 182);
@@ -251,6 +267,7 @@ endShape();
 pop();
 
 push();
+fill(133, 86, 53, 255);
 beginShape();
 vertex(144, 195);
 bezierVertex(178, 207, 216, 209, 247, 200);
@@ -262,6 +279,7 @@ pop();
 
 //Zipper
 push();
+fill(233, 226, 210, 255);
 beginShape();
 vertex(162, 285);
 bezierVertex(161, 249, 166, 230, 170, 213);
@@ -269,6 +287,8 @@ endShape();
 pop();
 
 push();
+strokeWeight(1.3);
+fill(110, 104, 103, 255);
 beginShape();
 vertex(170, 213);
 vertex(173, 224);
@@ -286,6 +306,7 @@ line(156, 271, 169, 274);
 
 //Rigth Arm
 push();
+fill(233, 226, 210, 255);
 beginShape();
 vertex(238, 231);
 vertex(229, 228);
@@ -295,6 +316,7 @@ endShape();
 pop();
 
 push();
+fill(233, 226, 210, 255);
 beginShape();
 vertex(276, 218);
 bezierVertex(275, 214, 281, 204, 287, 206);
@@ -307,6 +329,7 @@ endShape();
 pop();
 
 push();
+fill(133, 86, 53, 255);
 beginShape();
 vertex(254, 230);
 bezierVertex(253, 222, 253, 215, 258, 207);
@@ -323,6 +346,7 @@ line(283, 217, 283, 225);
 
 //Rigth Leg
 push();
+fill(233, 226, 210, 255);
 beginShape();
 vertex(222, 282);
 vertex(218, 308);
@@ -337,6 +361,7 @@ endShape();
 pop();
 
 push();
+fill(233, 226, 210, 255);
 beginShape();
 vertex(221, 285);
 bezierVertex(211, 283, 208, 281, 190, 289);
@@ -347,6 +372,7 @@ endShape();
 pop();
 
 push();
+fill(133, 86, 53, 255);
 beginShape();
 vertex(191, 300);
 vertex(192, 311);
@@ -357,6 +383,7 @@ endShape();
 pop();
 
 push();
+fill(53, 62, 59, 255);
 beginShape();
 vertex(194, 317);
 vertex(203, 319);
