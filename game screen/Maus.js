@@ -3,9 +3,6 @@ background(0, 150, 255);
 translate(200,200); */
 
 //HEAD
-
-//Ear fill  color
-
 //Ear left
 push();
 beginShape();
@@ -121,3 +118,95 @@ pop();
 line(138, 146, 134, 167);
 line(143, 150, 140, 175);
 line(148, 147, 149, 170);
+
+//Jetpack
+push();
+beginShape();
+vertex(249, 191);
+vertex(260, 196);
+bezierVertex(256, 220, 255, 243, 257, 257);
+bezierVertex(252, 267, 245, 267, 237, 264);
+vertex(237, 198);
+vertex(249, 191);
+endShape();
+pop();
+
+//Tail
+push();
+beginShape();
+vertex(223, 279);
+bezierVertex(240, 286, 251, 288, 271, 285);
+bezierVertex(288, 287, 299, 296, 314, 295);
+bezierVertex(317, 295, 317, 296, 314, 298);
+bezierVertex(299, 297, 288, 296, 274, 293);
+bezierVertex(250, 294, 230, 297, 212, 284);
+endShape();
+pop();
+
+//Helmet
+push();
+noFill();
+beginShape();
+vertex(142, 178);
+bezierVertex(10, 20, 380, 20, 251, 183);
+endShape();
+pop();
+
+push();
+beginShape();
+vertex(184, 75);
+bezierVertex(172, 75, 159, 77, 147, 83);
+bezierVertex(141, 85, 140, 82, 143, 77);
+bezierVertex(150, 71, 168, 68, 180, 68);
+bezierVertex(188, 68, 192, 73, 184, 75);
+endShape();
+pop();
+
+//Astronaut Body
+//Body
+push();
+beginShape();
+vertex(140, 178);
+bezierVertex(186, 190, 221, 191, 253, 182);
+bezierVertex(243, 215, 237, 230, 240, 270);
+bezierVertex(205, 300, 160, 290, 137, 270);
+bezierVertex(120, 230, 145, 200, 144, 195);
+vertex(143, 190);
+vertex(140, 177);
+endShape();
+pop();
+
+//Brown detail
+push();
+beginShape();
+vertex(144, 195);
+bezierVertex(178, 207, 216, 209, 247, 200);
+vertex(250, 192);
+bezierVertex(218, 200, 178, 199, 143, 186);
+bezierVertex(141, 189, 142, 192, 144, 195);
+endShape();
+pop();
+
+//Zipper
+push();
+beginShape();
+vertex(162, 285);
+bezierVertex(161, 249, 166, 230, 170, 213);
+endShape();
+pop();
+
+push();
+beginShape();
+vertex(170, 213);
+vertex(173, 224);
+vertex(162, 221);
+vertex(170, 213);
+endShape();
+pop();
+
+line(164, 211, 176, 214);
+line(161, 231, 172, 234);
+line(159, 241, 170, 244);
+line(158, 251, 169, 254);
+line(156, 260, 169, 263);
+line(156, 271, 169, 274);
