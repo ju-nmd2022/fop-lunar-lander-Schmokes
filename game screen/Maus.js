@@ -35,7 +35,7 @@ line(144, 125, 147, 99);
 //Head
 push();
 beginShape();
-vertex(160, 165);
+vertex(159, 165);
 vertex(162, 195);
 vertex(242, 198);
 bezierVertex(250, 130, 240, 110, 195, 115);
@@ -115,8 +115,8 @@ endShape();
 pop();
 
 //Wiskers down
-line(138, 146, 134, 167);
-line(143, 150, 140, 175);
+line(138, 146, 134, 166);
+line(143, 150, 140, 173);
 line(148, 147, 149, 170);
 
 //Jetpack
@@ -161,6 +161,81 @@ bezierVertex(150, 71, 168, 68, 180, 68);
 bezierVertex(188, 68, 192, 73, 184, 75);
 endShape();
 pop();
+
+//Left Arm
+push();
+beginShape();
+vertex(91, 193);
+bezierVertex(91, 183, 88, 181, 85, 181);
+bezierVertex(66, 180, 70, 208, 89, 209);
+bezierVertex(88, 213, 107, 204, 121, 212);
+bezierVertex(129, 211, 135, 215, 139, 216);
+vertex(150, 198);
+vertex(144, 185);
+bezierVertex(123, 189, 104, 192, 90, 186);
+endShape();
+pop();
+
+push();
+beginShape();
+vertex(98, 188);
+bezierVertex(98, 184, 102, 187, 105, 189);
+bezierVertex(107, 185, 114, 185, 116, 188);
+bezierVertex(122, 195, 121, 204, 116, 210);
+bezierVertex(109, 211, 102, 210, 93, 209);
+bezierVertex(94, 203, 93, 193, 98, 188);
+endShape();
+pop();
+
+line(84, 193, 85, 196);
+line(85, 196, 84, 203);
+line(84, 203, 82, 205);
+
+line(112, 192, 114, 198);
+line(114, 198, 114, 204);
+
+line(139, 205, 139, 197);
+line(139, 197, 142, 191);
+
+//Left Leg
+push();
+beginShape();
+vertex(162, 283);
+vertex(159, 294);
+vertex(160, 298);
+vertex(156, 298);
+vertex(156, 320);
+bezierVertex(147, 328, 130, 323, 127, 320);
+bezierVertex(125, 317, 128, 310, 135, 309);
+vertex(135, 300);
+bezierVertex(128, 290, 130, 290, 134, 283);
+bezierVertex(138, 278, 139, 274, 143, 272);
+endShape();
+pop();
+
+push();
+beginShape();
+vertex(135, 307);
+vertex(145, 311);
+vertex(142, 316);
+vertex(130, 312);
+vertex(135, 307);
+endShape();
+pop();
+
+push();
+beginShape();
+vertex(156, 298);
+bezierVertex(149, 297, 141, 297, 132, 295);
+bezierVertex(130, 299, 131, 302, 134, 304);
+bezierVertex(131, 306, 132, 308, 136, 309);
+vertex(155, 309);
+bezierVertex(158, 305, 157, 301, 156, 298);
+endShape();
+pop();
+
+line(134, 304, 140, 304);
+line(133, 289, 140, 291);
 
 //Astronaut Body
 push();
@@ -213,7 +288,7 @@ line(156, 271, 169, 274);
 push();
 beginShape();
 vertex(238, 231);
-vertex(228, 228);
+vertex(229, 228);
 bezierVertex(227, 215, 231, 206, 234, 203);
 vertex(240, 202);
 endShape();
@@ -245,3 +320,52 @@ line(261, 210, 259, 216);
 
 line(285, 212, 283, 217);
 line(283, 217, 283, 225);
+
+//Rigth Leg
+push();
+beginShape();
+vertex(222, 282);
+vertex(218, 308);
+vertex(217, 327);
+bezierVertex(211, 332, 193, 331, 186, 327);
+bezierVertex(186, 323, 191, 319, 194, 318);
+vertex(194, 310);
+vertex(190, 297);
+vertex(192, 285);
+vertex(222, 282);
+endShape();
+pop();
+
+push();
+beginShape();
+vertex(221, 285);
+bezierVertex(211, 283, 208, 281, 190, 289);
+bezierVertex(190, 286, 191, 284, 193, 283);
+bezierVertex(208, 277, 214, 279, 222, 281);
+bezierVertex(224, 283, 224, 287, 221, 285);
+endShape();
+pop();
+
+push();
+beginShape();
+vertex(191, 300);
+vertex(192, 311);
+bezierVertex(198, 313, 211, 313, 218, 310);
+vertex(220, 299);
+bezierVertex(211, 299, 199, 302, 191, 300);
+endShape();
+pop();
+
+push();
+beginShape();
+vertex(194, 317);
+vertex(203, 319);
+vertex(200, 323);
+vertex(189, 320);
+vertex(194, 317);
+endShape();
+pop();
+
+line(193, 297, 198, 297);
+
+line(192, 303, 197, 304);
