@@ -1,5 +1,5 @@
 background(0, 150, 255);
-let x = 200;
+let x = 100;
 let y = 200;
 
 translate(x, y);
@@ -82,7 +82,7 @@ endShape();
 pop();
 
 push();
-fill(x + 34, y - 87, x - 150, y + 55);
+fill(234, 113, 50, 255);
 beginShape();
 vertex(x - 12, y - 86);
 vertex(x + 2, y - 76);
