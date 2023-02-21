@@ -1,7 +1,7 @@
 background(0, 150, 255);
 let x = 100;
 let y = 150;
-let s = 0.8;
+let s = 1.8;
 
 translate(x, y);
 
