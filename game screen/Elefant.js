@@ -1,4 +1,4 @@
-let x = 200;
+let x = 100;
 let y = 200;
 let s = 0.8;
 
@@ -63,7 +63,7 @@ beginShape();
 vertex(x + 15, y + 87);
 vertex(x - 2, y + 102);
 bezierVertex(x - 17, y + 96, x - 28, y + 84, x - 30, y + 77);
-bezierVertex(x - 34, x + 67, x - 25, y + 67, x - 18, y + 72);
+bezierVertex(x - 34, y + 67, x - 25, y + 67, x - 18, y + 72);
 vertex(x - 13, y + 60);
 endShape();
 pop();
@@ -93,7 +93,7 @@ vertex(x + 183, y - 90);
 vertex(x + 184, y - 80);
 vertex(x + 190, y - 84);
 vertex(x + 181, y - 73);
-bezierVertex(x + 180, y - 70, x + 178, y - 68, y + 175, y - 68);
+bezierVertex(x + 180, y - 70, x + 178, y - 68, x + 175, y - 68);
 bezierVertex(x + 164, y - 63, x + 158, y - 56, x + 148, y - 32);
 endShape();
 pop();
@@ -118,12 +118,12 @@ vertex(x + 111, y - 12);
 bezierVertex(x - 2, y - 23, x + 86, y - 33, x + 75, y - 50);
 bezierVertex(x + 74, y - 82, x + 90, y - 93, x + 108, y - 94);
 bezierVertex(x + 140, y - 89, x + 159, y - 62, x + 154, y - 44);
-bezierVertex(y + 147, y - 23, x + 135, y - 14, x + 111, y - 12);
+bezierVertex(x + 147, y - 23, x + 135, y - 14, x + 111, y - 12);
 endShape();
 pop();
 
 line(x + 92, y - 49, x + 94, y - 65);
-line(x + 94, y - 65, y + 101, y - 75);
+line(x + 94, y - 65, x + 101, y - 75);
 line(x + 101, y - 75, x + 116, y - 74);
 
 //Ear left
@@ -146,7 +146,7 @@ line(x - 10, y - 74, x - 23, y - 67);
 //Inside Helmet
 push();
 fill("#b1988b");
-ellipse(x + 45, y + 26, x - 48, y - 56);
+ellipse(x + 45, y + 26, 152, 144);
 
 beginShape();
 vertex(x - 22, y - 9);
