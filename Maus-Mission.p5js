@@ -2,7 +2,7 @@
   {
     "kind": 1,
     "language": "markdown",
-    "value": "## Maus Mission\r\n\r\nStart Screen:\r\n1. Make the Moon\r\n2. Make the steamy things\r\n3. Make the night sky\r\n4. Make the Headline\r\n5. Make the explanation\r\n6. Add Name of the creator\r\n7. Make a Button to start\r\n8. connect the button to the game screen\r\n\r\nGame Screen:\r\n1. Make the Maus\r\n2. Make the Background\r\n3. Draw the Elefant\r\n4. Make the Elefant move from left to right\r\n5. Make a hitbox for both of them\r\n6. Create gravity for Maus\r\n7. Make jetpack power \r\n8. Make Fire for the jetpack\r\n9. Create a shadow\r\n10. Make conditions for winning and losing --> if you are faster than this speed then ...\r\n11. Game starts only when pressing the space bar\r\n12. connect the end of the game to the result screen\r\n\r\nResult screen:\r\n1. Create the two different outcomes (Mission acomplished or failed)\r\n2. Add the Headlines\r\n3. Add the Caracters\r\n4. Make a restart Button\r\n5. Connect the restart Button to the game screen\r\n\r\nAdditional Feature: Avoiding the Elefant while trying to land"
+    "value": "## Maus Mission\r\n\r\nStart Screen:\r\n1. Make the Moon\r\n2. Make the steamy things\r\n3. Make the night sky\r\n4. Make the Headline & Explanation\r\n5. Add Name of the creator\r\n6. Hit the space bar to start the game\r\n\r\nGame Screen:\r\n1. Make the Maus\r\n2. Make the Background\r\n3. Draw the Elefant\r\n4. Make the Elefant move from left to right\r\n5. Make a hitbox for both of them\r\n6. Create gravity for Maus\r\n7. Make jetpack power \r\n8. Make Fire for the jetpack\r\n9. Create a shadow\r\n10. Make conditions for winning and losing --> if you are faster than this speed then ...\r\n11. Game starts only when pressing the space bar\r\n12. connect the end of the game to the result screen\r\n\r\nResult screen:\r\n1. Create the two different outcomes (Mission acomplished or failed)\r\n2. Add the Headlines\r\n3. Add the Caracters\r\n4. Make a restart Button\r\n5. Connect the restart Button to the game screen\r\n\r\nAdditional Feature: Avoiding the Elefant while trying to land"
   },
   {
     "kind": 1,
@@ -12,7 +12,7 @@
   {
     "kind": 2,
     "language": "javascript",
-    "value": "function setup() {\r\n    window.createCanvas(800, 600);\r\n    background(0,0,0);\r\n  }\r\n\r\n\r\nfunction moon() {\r\n    noStroke();\r\n    fill(229,229,229);\r\n    ellipse(100,500, 358);\r\n\r\n    fill(201,201,201);\r\n    ellipse(80, 380, 45);\r\n    ellipse(160, 430, 60);\r\n    ellipse(20, 480, 70);\r\n    ellipse(130, 540, 80);\r\n\r\n    beginShape();\r\n    vertex(268,440);\r\n    bezierVertex(247,454, 247, 507, 278,505);\r\n    bezierVertex(281, 478, 273, 457, 268,440);\r\n    endShape();\r\n}\r\n\r\nfunction draw() {\r\n    moon();\r\n}"
+    "value": "function setup() {\r\n    window.createCanvas(800, 600);\r\n    background(\"#000014\");\r\n  }\r\n\r\n\r\nfunction moon() {\r\n    noStroke();\r\n    fill(229,229,229);\r\n    ellipse(100,500, 358);\r\n\r\n    fill(201,201,201);\r\n    ellipse(80, 380, 45);\r\n    ellipse(160, 430, 60);\r\n    ellipse(20, 480, 70);\r\n    ellipse(130, 540, 80);\r\n\r\n    beginShape();\r\n    vertex(268,440);\r\n    bezierVertex(247,454, 247, 507, 278,505);\r\n    bezierVertex(281, 478, 273, 457, 268,440);\r\n    endShape();\r\n}\r\n\r\nfunction draw() {\r\n    moon();\r\n}"
   },
   {
     "kind": 1,
@@ -37,12 +37,12 @@
   {
     "kind": 1,
     "language": "markdown",
-    "value": "## Start Screen - Make the Headline\r\nMaus Mission is the name of the game "
+    "value": "## Start Screen - Make the Headline & Explanation\r\nMaus Mission is the name of the game and explanation"
   },
   {
-    "kind": 1,
-    "language": "markdown",
-    "value": "## Start Screen - Make the Explanation\r\nYou contron the thrust with the space key and the game also start it with pressing it "
+    "kind": 2,
+    "language": "javascript",
+    "value": "function headline() {\r\n    textSize(60);\r\n    fill(229,229,229);\r\n    text(\"Maus Mission\", 400, 300);\r\n\r\n    textSize(20);\r\n    textStyle(ITALIC);\r\n    text(\"Hit space to start the the game!\", 400, 350);\r\n}\r\n\r\nfunction draw() {\r\n    moon();\r\n    steamyThings();\r\n    headline();\r\n}"
   },
   {
     "kind": 1,
@@ -50,14 +50,14 @@
     "value": "## Start Screeen - Add Name of the creator\r\nScmokes which is me is the creator, somewhere placed on the screen"
   },
   {
-    "kind": 1,
-    "language": "markdown",
-    "value": "## Start Screen - make the Button to start \r\nVisual button to start the game"
+    "kind": 2,
+    "language": "javascript",
+    "value": "function creatorName() {\r\n    textSize(15);\r\n    text(\"Made by Schmokes\", 340, 570);\r\n} \r\n\r\nfunction draw() {\r\n    moon();\r\n    steamyThings();\r\n    headline();\r\n    creatorName();\r\n}"
   },
   {
     "kind": 1,
     "language": "markdown",
-    "value": "## Start Screen - Connect the button to the game screen \r\nIf you press the button the screen changes to the game screen - look at video on how to create the different screens"
+    "value": "## Start Screen - Hit space to get to the Game screen\r\nWhen pressing the space bar you will be directed to the game screen to get a step further to play it"
   },
   {
     "kind": 1,

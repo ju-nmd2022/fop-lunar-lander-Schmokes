@@ -13,3 +13,6 @@ vertex(268,440);
 bezierVertex(247,454, 247, 507, 278,505);
 bezierVertex(281, 478, 273, 457, 268,440);
 endShape();
+
+textSize(45);
+text("Maus Mission", 420,140);
