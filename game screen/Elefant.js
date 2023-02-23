@@ -8,21 +8,42 @@ background(200, 200, 200);
 push();
 fill("#f2eeec");
 beginShape();
-vertex(x + 135, y + 28);
-vertex(x + 162, y + 54);
-bezierVertex(x + 156, y + 74, x + 144, y + 81, x + 134, y + 84);
-vertex(x + 104, y + 60);
+vertex(x + 135 * s, y + 28 * s);
+vertex(x + 162 * s, y + 54 * s);
+bezierVertex(
+  x + 156 * s,
+  y + 74 * s,
+  x + 144 * s,
+  y + 81 * s,
+  x + 134 * s,
+  y + 84 * s
+);
+vertex(x + 104 * s, y + 60 * s);
 endShape();
 pop();
 
 push();
 fill("#8b553f");
 beginShape();
-vertex(x + 159, y + 51);
-vertex(x + 167, y + 59);
-bezierVertex(x + 165, y + 72, x + 153, y + 84, x + 141, y + 90);
-vertex(x + 132, y + 82);
-bezierVertex(x + 144, y + 76, x + 154, y + 66, x + 159, y + 51);
+vertex(x + 159 * s, y + 51 * s);
+vertex(x + 167 * s, y + 59 * s);
+bezierVertex(
+  x + 165 * s,
+  y + 72 * s,
+  x + 153 * s,
+  y + 84 * s,
+  x + 141 * s,
+  y + 90 * s
+);
+vertex(x + 132 * s, y + 82 * s);
+bezierVertex(
+  x + 144 * s,
+  y + 76 * s,
+  x + 154 * s,
+  y + 66 * s,
+  x + 159 * s,
+  y + 51 * s
+);
 endShape();
 pop();
 
@@ -30,127 +51,260 @@ pop();
 push();
 fill("#f2eeec");
 beginShape();
-vertex(x + 116, y + 69);
-vertex(x + 116, y + 82);
-vertex(x + 119, y + 82);
-vertex(x + 119, y + 97);
-bezierVertex(x + 125, y + 100, x + 125, y + 103, x + 123, y + 107);
-vertex(x + 118, y + 112);
-bezierVertex(x + 105, y + 115, x + 95, y + 113, x + 84, y + 112);
-vertex(x + 80, y + 106);
-vertex(x + 79, y + 75);
+vertex(x + 116 * s, y + 69 * s);
+vertex(x + 116 * s, y + 82 * s);
+vertex(x + 119 * s, y + 82 * s);
+vertex(x + 119 * s, y + 97 * s);
+bezierVertex(
+  x + 125 * s,
+  y + 100 * s,
+  x + 125 * s,
+  y + 103 * s,
+  x + 123 * s,
+  y + 107 * s
+);
+vertex(x + 118 * s, y + 112 * s);
+bezierVertex(
+  x + 105 * s,
+  y + 115 * s,
+  x + 95 * s,
+  y + 113 * s,
+  x + 84 * s,
+  y + 112 * s
+);
+vertex(x + 80 * s, y + 106 * s);
+vertex(x + 79 * s, y + 75 * s);
 endShape();
 pop();
 
 push();
 fill("#8b553f");
 beginShape();
-vertex(x + 119, y + 86);
-vertex(x + 122, y + 95);
-bezierVertex(x + 115, y + 103, x + 95, y + 105, x + 80, y + 105);
-vertex(x + 77, y + 96);
-bezierVertex(x + 92, y + 94, x + 105, y + 95, x + 119, y + 86);
+vertex(x + 119 * s, y + 86 * s);
+vertex(x + 122 * s, y + 95 * s);
+bezierVertex(
+  x + 115 * s,
+  y + 103 * s,
+  x + 95 * s,
+  y + 105 * s,
+  x + 80 * s,
+  y + 105 * s
+);
+vertex(x + 77 * s, y + 96 * s);
+bezierVertex(
+  x + 92 * s,
+  y + 94 * s,
+  x + 105 * s,
+  y + 95 * s,
+  x + 119 * s,
+  y + 86 * s
+);
 endShape();
 pop();
 
-line(x + 111, y + 101, x + 116, y + 104);
-line(x + 119, y + 82, x + 112, y + 85);
+line(x + 111 * s, y + 101 * s, x + 116 * s, y + 104 * s);
+line(x + 119 * s, y + 82 * s, x + 112 * s, y + 85 * s);
 
 //Frontleg Left
 push();
 fill("#f2eeec");
 beginShape();
-vertex(x + 15, y + 87);
-vertex(x - 2, y + 102);
-bezierVertex(x - 17, y + 96, x - 28, y + 84, x - 30, y + 77);
-bezierVertex(x - 34, y + 67, x - 25, y + 67, x - 18, y + 72);
-vertex(x - 13, y + 60);
+vertex(x + 15 * s, y + 87 * s);
+vertex(x - 2 * s, y + 102 * s);
+bezierVertex(
+  x - 17 * s,
+  y + 96 * s,
+  x - 28 * s,
+  y + 84 * s,
+  x - 30 * s,
+  y + 77 * s
+);
+bezierVertex(
+  x - 34 * s,
+  y + 67 * s,
+  x - 25 * s,
+  y + 67 * s,
+  x - 18 * s,
+  y + 72 * s
+);
+vertex(x - 13 * s, y + 60 * s);
 endShape();
 pop();
 
 push();
 fill("#8b553f");
 beginShape();
-vertex(x - 18, y + 72);
-bezierVertex(x - 16, y + 84, x - 7, y + 94, x + 5, y + 97);
-vertex(x + 14, y + 89);
-vertex(x - 16, y + 61);
-vertex(x - 18, y + 72);
+vertex(x - 18 * s, y + 72 * s);
+bezierVertex(
+  x - 16 * s,
+  y + 84 * s,
+  x - 7 * s,
+  y + 94 * s,
+  x + 5 * s,
+  y + 97 * s
+);
+vertex(x + 14 * s, y + 89 * s);
+vertex(x - 16 * s, y + 61 * s);
+vertex(x - 18 * s, y + 72 * s);
 endShape();
 pop();
 
-line(x - 17, y + 78, x - 22, y + 74);
+line(x - 17 * s, y + 78 * s, x - 22 * s, y + 74 * s);
 
 //Tail
 push();
 fill(0, 0, 0);
 beginShape();
-vertex(x + 140, y - 35);
-bezierVertex(x + 143, y - 55, x + 160, y - 31, x + 175, y - 72);
-vertex(x + 179, y - 86);
-vertex(x + 180, y - 78);
-vertex(x + 183, y - 90);
-vertex(x + 184, y - 80);
-vertex(x + 190, y - 84);
-vertex(x + 181, y - 73);
-bezierVertex(x + 180, y - 70, x + 178, y - 68, x + 175, y - 68);
-bezierVertex(x + 164, y - 63, x + 158, y - 56, x + 148, y - 32);
+vertex(x + 140 * s, y - 35 * s);
+bezierVertex(
+  x + 143 * s,
+  y - 55 * s,
+  x + 160 * s,
+  y - 31 * s,
+  x + 175 * s,
+  y - 72 * s
+);
+vertex(x + 179 * s, y - 86 * s);
+vertex(x + 180 * s, y - 78 * s);
+vertex(x + 183 * s, y - 90 * s);
+vertex(x + 184 * s, y - 80 * s);
+vertex(x + 190 * s, y - 84 * s);
+vertex(x + 181 * s, y - 73 * s);
+bezierVertex(
+  x + 180 * s,
+  y - 70 * s,
+  x + 178 * s,
+  y - 68 * s,
+  x + 175 * s,
+  y - 68 * s
+);
+bezierVertex(
+  x + 164 * s,
+  y - 63 * s,
+  x + 158 * s,
+  y - 56 * s,
+  x + 148 * s,
+  y - 32 * s
+);
 endShape();
 pop();
 
 //Autronaut Body
 push();
 fill("#f2eeec");
-ellipse(x + 70, y + 10, 190, 170);
+ellipse(x + 70 * s, y + 10 * s, 190 * s, 170 * s);
 pop();
-line(x + 104, y + 69, x + 140, y + 45);
-line(x + 140, y + 45, x + 148, y + 17);
-line(x + 148, y + 17, x + 149, y - 6);
-line(x + 149, y - 6, x + 136, y - 31);
-line(x + 136, y - 31, x + 64, y - 63);
-line(x + 64, y - 63, x + 24, y - 58);
+line(x + 104 * s, y + 69 * s, x + 140 * s, y + 45 * s);
+line(x + 140 * s, y + 45 * s, x + 148 * s, y + 17 * s);
+line(x + 148 * s, y + 17 * s, x + 149 * s, y - 6 * s);
+line(x + 149 * s, y - 6 * s, x + 136 * s, y - 31 * s);
+line(x + 136 * s, y - 31 * s, x + 64 * s, y - 63 * s);
+line(x + 64 * s, y - 63 * s, x + 24 * s, y - 58 * s);
 
 //Ear right
 push();
 fill("#252b56");
 beginShape();
-vertex(x + 111, y - 12);
-bezierVertex(x - 2, y - 23, x + 86, y - 33, x + 75, y - 50);
-bezierVertex(x + 74, y - 82, x + 90, y - 93, x + 108, y - 94);
-bezierVertex(x + 140, y - 89, x + 159, y - 62, x + 154, y - 44);
-bezierVertex(x + 147, y - 23, x + 135, y - 14, x + 111, y - 12);
+vertex(x + 111 * s, y - 12 * s);
+bezierVertex(
+  x - 2 * s,
+  y - 23 * s,
+  x + 86 * s,
+  y - 33 * s,
+  x + 75 * s,
+  y - 50 * s
+);
+bezierVertex(
+  x + 74 * s,
+  y - 82 * s,
+  x + 90 * s,
+  y - 93 * s,
+  x + 108 * s,
+  y - 94 * s
+);
+bezierVertex(
+  x + 140 * s,
+  y - 89 * s,
+  x + 159 * s,
+  y - 62 * s,
+  x + 154 * s,
+  y - 44 * s
+);
+bezierVertex(
+  x + 147 * s,
+  y - 23 * s,
+  x + 135 * s,
+  y - 14 * s,
+  x + 111 * s,
+  y - 12 * s
+);
 endShape();
 pop();
 
-line(x + 92, y - 49, x + 94, y - 65);
-line(x + 94, y - 65, x + 101, y - 75);
-line(x + 101, y - 75, x + 116, y - 74);
+line(x + 92 * s, y - 49 * s, x + 94 * s, y - 65 * s);
+line(x + 94 * s, y - 65 * s, x + 101 * s, y - 75 * s);
+line(x + 101 * s, y - 75 * s, x + 116 * s, y - 74 * s);
 
 //Ear left
 push();
 fill("#252b56");
 beginShape();
-vertex(x + 22, y - 48);
-bezierVertex(x + 23, y - 53, x + 26, y - 58, x + 26, y - 69);
-bezierVertex(x + 16, y - 87, x - 4, y - 87, x - 17, y - 87);
-bezierVertex(x - 46, y - 78, x - 50, y - 71, x - 52, y - 54);
-bezierVertex(x - 52, y - 30, x - 38, y - 16, x - 21, y - 15);
-vertex(x + 22, y - 48);
+vertex(x + 22 * s, y - 48 * s);
+bezierVertex(
+  x + 23 * s,
+  y - 53 * s,
+  x + 26 * s,
+  y - 58 * s,
+  x + 26 * s,
+  y - 69 * s
+);
+bezierVertex(
+  x + 16 * s,
+  y - 87 * s,
+  x - 4 * s,
+  y - 87 * s,
+  x - 17 * s,
+  y - 87 * s
+);
+bezierVertex(
+  x - 46 * s,
+  y - 78 * s,
+  x - 50 * s,
+  y - 71 * s,
+  x - 52 * s,
+  y - 54 * s
+);
+bezierVertex(
+  x - 52 * s,
+  y - 30 * s,
+  x - 38 * s,
+  y - 16 * s,
+  x - 21 * s,
+  y - 15 * s
+);
+vertex(x + 22 * s, y - 48 * s);
 endShape();
 pop();
 
-line(x + 9, y - 54, x + 8, y - 70);
-line(x + 8, y - 70, x - 10, y - 74);
-line(x - 10, y - 74, x - 23, y - 67);
+line(x + 9 * s, y - 54 * s, x + 8 * s, y - 70 * s);
+line(x + 8 * s, y - 70 * s, x - 10 * s, y - 74 * s);
+line(x - 10 * s, y - 74 * s, x - 23 * s, y - 67 * s);
 
 //Inside Helmet
 push();
 fill("#b1988b");
-ellipse(x + 45, y + 26, 152, 144);
+ellipse(x + 45 * s, y + 26 * s, 152 * s, 144 * s);
 
 beginShape();
-vertex(x - 22, y - 9);
-bezierVertex(x - 20, y + 110, x + 97, y + 81, x + 108, y + 25);
+vertex(x - 22 * s, y - 9 * s);
+bezierVertex(
+  x - 20 * s,
+  y + 110 * s,
+  x + 97 * s,
+  y + 81 * s,
+  x + 108 * s,
+  y + 25 * s
+);
 endShape();
 pop();
 
@@ -158,64 +312,162 @@ pop();
 push();
 fill("#252b56");
 beginShape();
-vertex(x + 24, y - 39);
-bezierVertex(x - 3, y - 12, x - 8, y + 20, x + 8, y + 49);
-bezierVertex(x + 3, y + 84, x + 9, y + 96, x + 24, y + 99);
-bezierVertex(x + 50, y + 102, x + 64, y + 92, x + 77, y + 48);
-bezierVertex(x + 90, y + 36, x + 97, y + 18, x + 92, y - 16);
-vertex(x + 61, y - 35);
-vertex(x + 31, y - 42);
+vertex(x + 24 * s, y - 39 * s);
+bezierVertex(
+  x - 3 * s,
+  y - 12 * s,
+  x - 8 * s,
+  y + 20 * s,
+  x + 8 * s,
+  y + 49 * s
+);
+bezierVertex(
+  x + 3 * s,
+  y + 84 * s,
+  x + 9 * s,
+  y + 96 * s,
+  x + 24 * s,
+  y + 99 * s
+);
+bezierVertex(
+  x + 50 * s,
+  y + 102 * s,
+  x + 64 * s,
+  y + 92 * s,
+  x + 77 * s,
+  y + 48 * s
+);
+bezierVertex(
+  x + 90 * s,
+  y + 36 * s,
+  x + 97 * s,
+  y + 18 * s,
+  x + 92 * s,
+  y - 16 * s
+);
+vertex(x + 61 * s, y - 35 * s);
+vertex(x + 31 * s, y - 42 * s);
 endShape();
 pop();
 
-line(x + 8, y + 49, x + 12, y + 54);
+line(x + 8 * s, y + 49 * s, x + 12 * s, y + 54 * s);
 
 //Eye left
 push();
 beginShape();
-vertex(x + 22, y - 17);
-bezierVertex(x + 10, y - 10, x + 9, y + 8, x + 15, y + 12);
-bezierVertex(x + 29, y + 17, x + 39, y - 23, x + 22, y - 17);
+vertex(x + 22 * s, y - 17 * s);
+bezierVertex(
+  x + 10 * s,
+  y - 10 * s,
+  x + 9 * s,
+  y + 8 * s,
+  x + 15 * s,
+  y + 12 * s
+);
+bezierVertex(
+  x + 29 * s,
+  y + 17 * s,
+  x + 39 * s,
+  y - 23 * s,
+  x + 22 * s,
+  y - 17 * s
+);
 endShape();
 pop();
 
 push();
 fill(0, 0, 0);
 beginShape();
-vertex(x + 23, y + 10);
-bezierVertex(x + 13, y + 5, x + 19, y - 10, x + 30, y - 2);
-bezierVertex(x + 29, y + 4, x + 26, y + 7, x + 23, y + 10);
+vertex(x + 23 * s, y + 10 * s);
+bezierVertex(
+  x + 13 * s,
+  y + 5 * s,
+  x + 19 * s,
+  y - 10 * s,
+  x + 30 * s,
+  y - 2 * s
+);
+bezierVertex(
+  x + 29 * s,
+  y + 4 * s,
+  x + 26 * s,
+  y + 7 * s,
+  x + 23 * s,
+  y + 10 * s
+);
 endShape();
 pop();
 
 //Eye right
 beginShape();
-vertex(x + 59, y - 12);
-bezierVertex(x + 45, y - 10, x + 37, y + 12, x + 55, y + 20);
-bezierVertex(x + 75, y + 21, x + 76, y - 12, x + 59, y - 12);
+vertex(x + 59 * s, y - 12 * s);
+bezierVertex(
+  x + 45 * s,
+  y - 10 * s,
+  x + 37 * s,
+  y + 12 * s,
+  x + 55 * s,
+  y + 20 * s
+);
+bezierVertex(
+  x + 75 * s,
+  y + 21 * s,
+  x + 76 * s,
+  y - 12 * s,
+  x + 59 * s,
+  y - 12 * s
+);
 endShape();
 
 push();
 fill(0, 0, 0);
 beginShape();
-vertex(x + 59, y + 19);
-bezierVertex(x + 42, y + 8, x + 65, y - 9, x + 69, y + 10);
-bezierVertex(x + 68, y + 17, x + 63, y + 19, x + 59, y + 19);
+vertex(x + 59 * s, y + 19 * s);
+bezierVertex(
+  x + 42 * s,
+  y + 8 * s,
+  x + 65 * s,
+  y - 9 * s,
+  x + 69 * s,
+  y + 10 * s
+);
+bezierVertex(
+  x + 68 * s,
+  y + 17 * s,
+  x + 63 * s,
+  y + 19 * s,
+  x + 59 * s,
+  y + 19 * s
+);
 endShape();
 pop();
 
 //Glas of Helmet
 push();
 noFill();
-ellipse(x + 33, y + 36, 150);
+ellipse(x + 33 * s, y + 36 * s, 150 * s);
 pop();
 
 push();
 fill("#7090a9");
 beginShape();
-vertex(x - 25, y + 55);
-bezierVertex(x - 13, y + 66, x - 5, y + 76, x + 8, y + 86);
-bezierVertex(x + 2, y + 96, x - 30, y + 63, x - 25, y + 55);
+vertex(x - 25 * s, y + 55 * s);
+bezierVertex(
+  x - 13 * s,
+  y + 66 * s,
+  x - 5 * s,
+  y + 76 * s,
+  x + 8 * s,
+  y + 86 * s
+);
+bezierVertex(
+  x + 2 * s,
+  y + 96 * s,
+  x - 30 * s,
+  y + 63 * s,
+  x - 25 * s,
+  y + 55 * s
+);
 endShape();
 pop();
 
@@ -223,16 +475,86 @@ pop();
 push();
 fill("#f2eeec");
 beginShape();
-vertex(x + 82, y + 92);
-bezierVertex(x + 105, y + 70, x + 119, y + 56, x + 127, y + 35);
-bezierVertex(x + 127, y + 4, x + 115, y - 26, x + 90, y - 41);
-bezierVertex(x + 77, y - 46, x + 65, y - 50, x + 58, y - 53);
-bezierVertex(x + 41, y - 57, x + 34, y - 57, x + 23, y - 55);
-bezierVertex(x + 11, y - 51, x + 5, y - 48, x - 4, y - 42);
-bezierVertex(x - 17, y - 37, x - 22, y - 30, x - 32, y - 1);
-bezierVertex(x - 19, y - 21, x - 1, y - 33, x + 10, y - 35);
-bezierVertex(x + 41, y - 40, x + 65, y - 30, x + 89, y - 12);
-bezierVertex(x + 108, y + 12, x + 110, y + 33, x + 100, y + 56);
-bezierVertex(x + 97, y + 65, x + 92, y + 72, x + 82, y + 92);
+vertex(x + 82 * s, y + 92 * s);
+bezierVertex(
+  x + 105 * s,
+  y + 70 * s,
+  x + 119 * s,
+  y + 56 * s,
+  x + 127 * s,
+  y + 35 * s
+);
+bezierVertex(
+  x + 127 * s,
+  y + 4 * s,
+  x + 115 * s,
+  y - 26 * s,
+  x + 90 * s,
+  y - 41 * s
+);
+bezierVertex(
+  x + 77 * s,
+  y - 46 * s,
+  x + 65 * s,
+  y - 50 * s,
+  x + 58 * s,
+  y - 53 * s
+);
+bezierVertex(
+  x + 41 * s,
+  y - 57 * s,
+  x + 34 * s,
+  y - 57 * s,
+  x + 23 * s,
+  y - 55 * s
+);
+bezierVertex(
+  x + 11 * s,
+  y - 51 * s,
+  x + 5 * s,
+  y - 48 * s,
+  x - 4 * s,
+  y - 42 * s
+);
+bezierVertex(
+  x - 17 * s,
+  y - 37 * s,
+  x - 22 * s,
+  y - 30 * s,
+  x - 32 * s,
+  y - 1 * s
+);
+bezierVertex(
+  x - 19 * s,
+  y - 21 * s,
+  x - 1 * s,
+  y - 33 * s,
+  x + 10 * s,
+  y - 35 * s
+);
+bezierVertex(
+  x + 41 * s,
+  y - 40 * s,
+  x + 65 * s,
+  y - 30 * s,
+  x + 89 * s,
+  y - 12 * s
+);
+bezierVertex(
+  x + 108 * s,
+  y + 12 * s,
+  x + 110 * s,
+  y + 33 * s,
+  x + 100 * s,
+  y + 56 * s
+);
+bezierVertex(
+  x + 97 * s,
+  y + 65 * s,
+  x + 92 * s,
+  y + 72 * s,
+  x + 82 * s,
+  y + 92 * s
+);
 endShape();
 pop();
