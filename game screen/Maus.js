@@ -1,9 +1,6 @@
-background(0, 150, 255);
-let x = 100;
-let y = 100;
-let s = 1.5;
-
-translate(x, y);
+let x = 200;
+let y = 200;
+let s = 0.8;
 
 //Ear left
 push();
@@ -116,7 +113,7 @@ bezierVertex(
   y - 85 * s
 );
 vertex(x + 12 * s, y - 82 * s);
-bezierVertex(x + 8 * s, y - 77 * s, x * s, y - 74 * s, x - 15 * s, y - 74 * s);
+bezierVertex(x + 8 * s, y - 77 * s, x, y - 74 * s, x - 15 * s, y - 74 * s);
 bezierVertex(
   x - 21 * s,
   y - 76 * s,
@@ -175,7 +172,7 @@ bezierVertex(
   x + 12 * s,
   y - 49 * s
 );
-bezierVertex(x * s, y - 50 * s, x - 5 * s, y - 59 * s, x - 1 * s, y - 65 * s);
+bezierVertex(x, y - 50 * s, x - 5 * s, y - 59 * s, x - 1 * s, y - 65 * s);
 bezierVertex(
   x + 6 * s,
   y - 68 * s,
@@ -317,8 +314,7 @@ pop();
 
 //Helmet
 push();
-fill(207, 235, 238, 255);
-noFill();
+fill(255, 255, 255, 10);
 beginShape();
 vertex(x - 58 * s, y - 22 * s);
 bezierVertex(
@@ -333,6 +329,7 @@ endShape();
 pop();
 
 push();
+fill(255, 255, 255, 200);
 beginShape();
 vertex(x - 16 * s, y - 125 * s);
 bezierVertex(
@@ -605,7 +602,7 @@ bezierVertex(
   x - 63 * s,
   y + 70 * s
 );
-bezierVertex(x - 80 * s, y + 30 * s, x - 55 * s, y * s, x - 56 * s, y - 5 * s);
+bezierVertex(x - 80 * s, y + 30 * s, x - 55 * s, y, x - 56 * s, y - 5 * s);
 vertex(x - 57 * s, y - 10 * s);
 vertex(x - 60 * s, y - 23 * s);
 endShape();
@@ -615,9 +612,9 @@ push();
 fill(133, 86, 53, 255);
 beginShape();
 vertex(x - 56 * s, y - 5 * s);
-bezierVertex(x - 22 * s, y + 7 * s, x + 16 * s, y + 9 * s, x + 47 * s, y * s); //the y makes it weird
+bezierVertex(x - 22 * s, y + 7 * s, x + 16 * s, y + 9 * s, x + 47 * s, y);
 vertex(x + 50 * s, y - 8 * s);
-bezierVertex(x + 18 * s, y * s, x - 22 * s, y - 1 * s, x - 57 * s, y - 14 * s);
+bezierVertex(x + 18 * s, y, x - 22 * s, y - 1 * s, x - 57 * s, y - 14 * s);
 bezierVertex(
   x - 59 * s,
   y - 11 * s,
@@ -817,7 +814,7 @@ vertex(x + 21 * s, y + 85 * s);
 bezierVertex(
   x + 11 * s,
   y + 83 * s,
-  x + 08 * s,
+  x + 8 * s,
   y + 81 * s,
   x - 10 * s,
   y + 89 * s
@@ -852,6 +849,7 @@ pop();
 push();
 fill(133, 86, 53, 255);
 beginShape();
+vertex(x - 9 * s, y + 100 * s);
 vertex(x - 8 * s, y + 111 * s);
 bezierVertex(
   x - 2 * s,
@@ -878,10 +876,11 @@ fill(53, 62, 59, 255);
 beginShape();
 vertex(x - 6 * s, y + 117 * s);
 vertex(x + 3 * s, y + 119 * s);
-vertex(x * s, y + 123 * s);
+vertex(x, y + 123 * s);
 vertex(x - 11 * s, y + 120 * s);
 vertex(x - 6 * s, y + 117 * s);
 endShape();
 pop();
 
+line(x - 7 * s, y + 97 * s, x - 2 * s, y + 97 * s);
 line(x - 8 * s, y + 103 * s, x - 3 * s, y + 104 * s);
