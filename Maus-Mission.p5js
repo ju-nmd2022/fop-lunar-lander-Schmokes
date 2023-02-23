@@ -52,7 +52,7 @@
   {
     "kind": 2,
     "language": "javascript",
-    "value": "function creatorName() {\r\n    textSize(15);\r\n    text(\"Made by Schmokes\", 340, 570);\r\n} \r\n\r\nfunction draw() {\r\n    moon();\r\n    steamyThings();\r\n    headline();\r\n    creatorName();\r\n}"
+    "value": "function creatorName() {\r\n    textSize(15);\r\n    text(\"Made by Schmokes🐱\", 340, 570);\r\n} \r\n\r\nfunction draw() {\r\n    moon();\r\n    steamyThings();\r\n    headline();\r\n    creatorName();\r\n}"
   },
   {
     "kind": 1,
