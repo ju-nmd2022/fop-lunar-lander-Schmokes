@@ -115,6 +115,11 @@
     "value": "## Game Screen - Make the fire of the jetpack\r\nWhen pressing the space key the fire will be drawn"
   },
   {
+    "kind": 2,
+    "language": "javascript",
+    "value": "function fireJetpack(x,y,s) {\r\n    push();\r\n    fill(\"#801100\");\r\n    beginShape();\r\n    vertex(x+35*s, y+58*s);\r\n    bezierVertex(x+3*s, y+82*s, x+21*s, y+112*s, x+38*s, y+137*s);\r\n    bezierVertex(x+58*s, y+112*s, x+69*s, y+76*s, x+53*s, y+54*s);\r\n    endShape();\r\n    pop();\r\n    \r\n    push();\r\n    fill(\"#FAC000\");\r\n    beginShape();\r\n    vertex(x+34*s, y+64*s);\r\n    bezierVertex(x+19*s, y+85*s, x+26*s, y+102*s, x+39*s, y+118*s);\r\n    bezierVertex(x+49*s, y+97*s, x+53*s, y+75*s, x+46*s, y+58*s);\r\n    endShape();\r\n    pop();\r\n}\r\n\r\nfunction draw() {\r\n    scenery();\r\n    fireJetpack(410,100,0.5);\r\n    maus(410,100,0.5);\r\n    elefant(100,300, 0.4);\r\n  }"
+  },
+  {
     "kind": 1,
     "language": "markdown",
     "value": "## Game Screen - Make conditions for winning and losing\r\n- If you are faster than this speed then you failed the Mission\r\n- If you touch the Elefant on the way down you failed the Mission\r\n- If you land with slow speed you accomplish the mission "
