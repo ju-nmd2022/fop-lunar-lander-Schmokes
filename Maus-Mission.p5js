@@ -2,7 +2,7 @@
   {
     "kind": 1,
     "language": "markdown",
-    "value": "## Maus Mission\r\n\r\nStart Screen:\r\n1. Make the Moon\r\n2. Make the steamy things\r\n3. Make the night sky\r\n4. Make the Headline & Explanation\r\n5. Add Name of the creator\r\n6. Hit the space bar to start the game\r\n\r\nGame Screen:\r\n1. Make the Maus\r\n2. Make the Background\r\n3. Draw the Elefant\r\n4. Make the Elefant move from left to right\r\n5. Make a hitbox for both of them\r\n6. Create gravity for Maus\r\n7. Make jetpack power \r\n8. Make Fire for the jetpack\r\n9. Create a shadow\r\n10. Make conditions for winning and losing --> if you are faster than this speed then ...\r\n11. Game starts only when pressing the space bar\r\n12. connect the end of the game to the result screen\r\n\r\nResult screen:\r\n1. Create the two different outcomes (Mission acomplished or failed)\r\n2. Add the Headlines\r\n3. Add the Caracters\r\n4. Make a restart Button\r\n5. Connect the restart Button to the game screen\r\n\r\nAdditional Feature: Avoiding the Elefant while trying to land"
+    "value": "## Maus Mission\r\n\r\nStart Screen:\r\n1. Make the Moon\r\n2. Make the steamy things\r\n3. Make the night sky\r\n4. Make the Headline & Explanation\r\n5. Add Name of the creator\r\n6. Hit the space bar to start the game\r\n\r\nGame Screen:\r\n1. Make the Maus\r\n2. Make the Background\r\n3. Draw the Elefant\r\n4. Make the Elefant move from left to right\r\n5. Make a hitbox for both of them\r\n6. Create gravity for Maus\r\n7. Make jetpack power \r\n8. Make Fire for the jetpack\r\n9. Make a landing platform\r\n10. Make conditions for winning and losing --> if you are faster than this speed then ...\r\n11. Game starts only when pressing the space bar\r\n12. connect the end of the game to the result screen\r\n\r\nResult screen:\r\n1. Create the two different outcomes (Mission acomplished or failed)\r\n2. Add the Headlines\r\n3. Add the Characters\r\n4. Game restars when pressing the key r\r\n\r\nAdditional Feature: Avoiding the Elefant while trying to land"
   },
   {
     "kind": 1,
@@ -57,7 +57,7 @@
   {
     "kind": 1,
     "language": "markdown",
-    "value": "## Start Screen - Hit space to get to the Game screen\r\nWhen pressing the space bar you will be directed to the game screen to get a step further to play it"
+    "value": "## Start Screen - Hit space to get to the Game screen\r\nWhen pressing the space bar you will be directed to the game screen to get a step further to play it AND add the whole start screen in a function"
   },
   {
     "kind": 1,
@@ -112,7 +112,7 @@
   {
     "kind": 1,
     "language": "markdown",
-    "value": "## Game Screen - Create a shadow \r\nThe closer the Maus comes to the ground the bigger the shadow will be"
+    "value": "## Game Screen - Make a landing platform\r\nA platform to show where the Maus has to land "
   },
   {
     "kind": 1,
@@ -147,11 +147,6 @@
   {
     "kind": 1,
     "language": "markdown",
-    "value": "## Result Screen - Make the restart button \r\nCreate the Button to resatrt the game underneath the headline"
-  },
-  {
-    "kind": 1,
-    "language": "markdown",
-    "value": "## Result Button - Connect the Button to the game screen\r\nWhen pressing the button the game screen will show again and you can play again"
+    "value": "## Result Screen - Restard when pressing key r\r\nCreate the Button to resatrt the game underneath the headline"
   }
 ]
