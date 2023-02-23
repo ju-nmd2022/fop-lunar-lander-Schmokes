@@ -71,3 +71,57 @@ bezierVertex(22, 537, 34, 555, 66, 564);
 bezierVertex(107, 569, 142, 570, 190, 600);
 vertex(0, 600);
 endShape();
+
+//landing space
+fill(75, 75, 75);
+rect(357, 544, 15, 20);
+rect(426, 546, 15, 20);
+
+push();
+fill(130, 130, 130);
+beginShape();
+vertex(335, 522);
+vertex(335, 547);
+bezierVertex(368, 562, 428, 562, 465, 547);
+vertex(465, 522);
+endShape();
+
+fill(250, 250, 250);
+ellipse(400, 520, 130, 30);
+fill(153, 0, 0);
+ellipse(400, 520, 110, 20);
+pop();
+
+beginShape();
+vertex(343, 533);
+vertex(343, 543);
+vertex(334, 549);
+vertex(334, 568);
+vertex(324, 568);
+vertex(324, 543);
+vertex(335, 533);
+vertex(343, 533);
+endShape();
+
+beginShape();
+vertex(458, 533);
+vertex(458, 543);
+vertex(468, 549);
+vertex(468, 568);
+vertex(478, 568);
+vertex(478, 543);
+vertex(466, 533);
+vertex(458, 533);
+endShape();
+
+beginShape();
+vertex(386, 547);
+vertex(411, 547);
+vertex(411, 580);
+vertex(386, 580);
+vertex(386, 547);
+endShape();
+
+line(386, 561, 403, 561);
+line(324, 543, 329, 547);
+line(478, 543, 472, 547);
