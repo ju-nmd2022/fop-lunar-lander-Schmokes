@@ -1708,14 +1708,15 @@ function gameScreen() {
   line(478, 543, 472, 547);
 
   if (keyIsDown(32)) {
-    fireJetpack(410, mausY, 0.5);
+    fireJetpack(mausX, mausY, 0.5);
   }
-  maus(410, mausY, 0.5);
-  elefant(elefantX, 300, 0.4);
+  maus(mausX, mausY, 0.5);
+  elefant(elefantX, elefantY, 0.4);
 }
 
 function winScreen() {
   //mission accomplished
+  background("#000014");
   fill(249, 249, 249);
   textSize(60);
   text("Mission Accomplished!", 100, 120);
@@ -1727,6 +1728,7 @@ function winScreen() {
 
 function loseScreen() {
   //mission failed
+  background("#000014");
   fill(249, 249, 249);
   textSize(60);
   text("Mission Failed!", 170, 120);
@@ -1736,19 +1738,21 @@ function loseScreen() {
   elefant(300, 360, 1.1);
 }
 
-let state = "start";
+let state = "game";
 //elefant movement
 let elefantX = 50;
+let elefantY = 300;
 let elefantDirection = "forward";
 //maus movement
+let mausX = 410;
 let mausY = 100;
 let velocity = 1;
 let acceleration = 0.1;
 //game status
-let isGameActive = true;
+let isGameActive = false;
 
-//changing the screens
 function draw() {
+  //changing the screens
   if (state === "start") {
     startScreen();
   } else if (state === "game") {
@@ -1759,6 +1763,10 @@ function draw() {
     loseScreen();
   }
 
+  //maus is at the top when game starts
+  if (keyIsDown(32) && state === "game" && mausY < 460) {
+    isGameActive = true;
+  }
   //maus and elefant movement
   if (isGameActive) {
     if (elefantDirection === "forward") {
@@ -1785,7 +1793,20 @@ function draw() {
     isGameActive = false;
   }
 
-  //changing of screens with space
+  //colision of maus and elefant
+  distance = int(dist(mausX, mausY, elefantX, elefantY));
+  if (distance < 90) {
+    //only really works when elefant on the left side, if on the right to far away
+    isGameActive = false;
+    state = "lose";
+    mausY = 100;
+    elefantX = 50;
+  }
+  //falling to fast
+
+  //landing perfectly
+
+  //changing of screens
   if (keyIsDown(32) && state === "start") {
     state = "game";
   } else if (keyIsDown(82) && (state === "lose" || state === "win")) {
