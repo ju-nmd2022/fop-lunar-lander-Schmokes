@@ -1578,6 +1578,7 @@ function startScreen() {
 
 function gameScreen() {
   //scenery
+  stroke(0.5);
   background("#000014");
   fill(145, 163, 176);
   beginShape();
@@ -1720,6 +1721,7 @@ function winScreen() {
   textSize(20);
   textStyle(ITALIC);
   text("To restart the Mission press R", 235, 200);
+  maus(380, 400, 1.1);
 }
 
 function loseScreen() {
@@ -1730,9 +1732,10 @@ function loseScreen() {
   textSize(20);
   textStyle(ITALIC);
   text("To restart the Mission press R", 235, 200);
+  elefant(300, 360, 1.1);
 }
 
-let state = "game";
+let state = "start";
 //elefant movement
 let elefantX = 50;
 let elefantDirection = "forward";
@@ -1784,7 +1787,7 @@ function draw() {
   //changing of screens with space
   if (keyIsDown(32) && state === "start") {
     state = "game";
-  } else if (keyIsDown(32) && (state === "lose" || state === "win")) {
+  } else if (keyIsDown(82) && (state === "lose" || state === "win")) {
     state = "game";
   }
 }
