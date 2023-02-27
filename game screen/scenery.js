@@ -9,7 +9,7 @@ vertex(800, 485);
 vertex(731, 503);
 endShape();
 
-fill(299, 299, 299);
+fill(249, 249, 249);
 beginShape();
 vertex(721, 486);
 bezierVertex(721, 452, 734, 435, 753, 431);
@@ -44,7 +44,7 @@ vertex(800, 600);
 vertex(612, 600);
 endShape();
 
-fill(299, 299, 299);
+fill(249, 249, 249);
 beginShape();
 vertex(112, 538);
 bezierVertex(195, 523, 247, 525, 289, 537);
@@ -64,7 +64,7 @@ bezierVertex(254, 569, 287, 581, 300, 600);
 vertex(0, 600);
 endShape();
 
-fill(299, 299, 299);
+fill(249, 249, 249);
 beginShape();
 vertex(0, 528);
 bezierVertex(22, 537, 34, 555, 66, 564);

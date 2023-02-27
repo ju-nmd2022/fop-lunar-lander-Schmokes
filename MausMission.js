@@ -1565,7 +1565,7 @@ function startScreen() {
 
   //headline
   textSize(60);
-  fill(229, 229, 229);
+  fill(249, 249, 249);
   text("Maus Mission", 400, 300);
 
   textSize(20);
@@ -1590,7 +1590,7 @@ function gameScreen() {
   vertex(731, 503);
   endShape();
 
-  fill(299, 299, 299);
+  fill(249, 249, 249);
   beginShape();
   vertex(721, 486);
   bezierVertex(721, 452, 734, 435, 753, 431);
@@ -1625,7 +1625,7 @@ function gameScreen() {
   vertex(612, 600);
   endShape();
 
-  fill(299, 299, 299);
+  fill(249, 249, 249);
   beginShape();
   vertex(112, 538);
   bezierVertex(195, 523, 247, 525, 289, 537);
@@ -1645,7 +1645,7 @@ function gameScreen() {
   vertex(0, 600);
   endShape();
 
-  fill(299, 299, 299);
+  fill(249, 249, 249);
   beginShape();
   vertex(0, 528);
   bezierVertex(22, 537, 34, 555, 66, 564);
@@ -1716,7 +1716,7 @@ function gameScreen() {
 
 function winScreen() {
   //mission accomplished
-  fill(299, 299, 299);
+  fill(249, 249, 249);
   textSize(60);
   text("Mission Accomplished!", 100, 120);
   textSize(20);
@@ -1727,7 +1727,7 @@ function winScreen() {
 
 function loseScreen() {
   //mission failed
-  fill(299, 299, 299);
+  fill(249, 249, 249);
   textSize(60);
   text("Mission Failed!", 170, 120);
   textSize(20);
