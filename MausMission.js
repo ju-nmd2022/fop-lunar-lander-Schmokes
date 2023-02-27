@@ -1,5 +1,6 @@
 function setup() {
   window.createCanvas(800, 600);
+  frameRate(30);
   background("#000014");
 }
 function fireJetpack(x, y, s) {
