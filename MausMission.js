@@ -1738,7 +1738,7 @@ function loseScreen() {
   elefant(300, 360, 1.1);
 }
 
-let state = "game";
+let state = "start";
 //elefant movement
 let elefantX = 50;
 let elefantY = 300;
@@ -1795,7 +1795,7 @@ function draw() {
 
   //colision of maus and elefant
   distance = int(dist(mausX, mausY, elefantX, elefantY));
-  if (distance < 90) {
+  if ((distance < 100 && elefantDirection === "forward") || (distance < 60 && elefantDirection === "backwards")) {
     //only really works when elefant on the left side, if on the right to far away
     isGameActive = false;
     state = "lose";
