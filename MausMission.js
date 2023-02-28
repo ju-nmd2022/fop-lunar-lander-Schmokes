@@ -898,7 +898,7 @@ function loseScreen() {
   elefant(320, 360, 1.1);
 }
 
-let state = "lose";
+let state = "start";
 //elefant movement
 let elefantX = 50;
 let elefantY = 300;
