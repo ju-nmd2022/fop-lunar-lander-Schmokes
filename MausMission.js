@@ -954,6 +954,7 @@ function draw() {
     isGameActive = false;
   }
   //colision of maus and elefant
+  // The next two lines of code were adapted from https://www.youtube.com/watch?v=Dz5_9_30-to
   distance = int(dist(mausX, mausY, elefantX, elefantY));
   if ((distance < 100 && elefantDirection === "forward") || (distance < 60 && elefantDirection === "backwards")) {
     isGameActive = false;
