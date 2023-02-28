@@ -882,7 +882,7 @@ function winScreen() {
   text("Mission Accomplished!", 100, 120);
   textSize(20);
   textStyle(ITALIC);
-  text("To restart the Mission press R", 250, 200);
+  text("To restart the Mission press R", 255, 200);
   maus(400, 400, 1.1);
 }
 
@@ -891,14 +891,14 @@ function loseScreen() {
   background("#000014");
   fill(249, 249, 249);
   textSize(60);
-  text("Mission Failed!", 180, 120);
+  text("Mission Failed!", 200, 120);
   textSize(20);
   textStyle(ITALIC);
-  text("To restart the Mission press R", 235, 200);
-  elefant(310, 360, 1.1);
+  text("To restart the Mission press R", 250, 200);
+  elefant(320, 360, 1.1);
 }
 
-let state = "win";
+let state = "lose";
 //elefant movement
 let elefantX = 50;
 let elefantY = 300;
