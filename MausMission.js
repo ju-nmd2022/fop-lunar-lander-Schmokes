@@ -8,22 +8,8 @@ function fireJetpack(x, y, s) {
   fill("#801100");
   beginShape();
   vertex(x + 35 * s, y + 58 * s);
-  bezierVertex(
-    x + 3 * s,
-    y + 82 * s,
-    x + 21 * s,
-    y + 112 * s,
-    x + 38 * s,
-    y + 137 * s
-  );
-  bezierVertex(
-    x + 58 * s,
-    y + 112 * s,
-    x + 69 * s,
-    y + 76 * s,
-    x + 53 * s,
-    y + 54 * s
-  );
+  bezierVertex(x + 3 * s, y + 82 * s, x + 21 * s, y + 112 * s, x + 38 * s, y + 137 * s);
+  bezierVertex(x + 58 * s, y + 112 * s, x + 69 * s, y + 76 * s, x + 53 * s, y + 54 * s);
   endShape();
   pop();
 
@@ -31,22 +17,8 @@ function fireJetpack(x, y, s) {
   fill("#FAC000");
   beginShape();
   vertex(x + 34 * s, y + 64 * s);
-  bezierVertex(
-    x + 19 * s,
-    y + 85 * s,
-    x + 26 * s,
-    y + 102 * s,
-    x + 39 * s,
-    y + 118 * s
-  );
-  bezierVertex(
-    x + 49 * s,
-    y + 97 * s,
-    x + 53 * s,
-    y + 75 * s,
-    x + 46 * s,
-    y + 58 * s
-  );
+  bezierVertex(x + 19 * s, y + 85 * s, x + 26 * s, y + 102 * s, x + 39 * s, y + 118 * s);
+  bezierVertex(x + 49 * s, y + 97 * s, x + 53 * s, y + 75 * s, x + 46 * s, y + 58 * s);
   endShape();
   pop();
 }
@@ -89,38 +61,10 @@ function maus(x, y, s) {
   vertex(x - 41 * s, y - 35 * s);
   vertex(x - 38 * s, y - 5 * s);
   vertex(x + 42 * s, y - 2 * s);
-  bezierVertex(
-    x + 50 * s,
-    y - 70 * s,
-    x + 40 * s,
-    y - 90 * s,
-    x - 5 * s,
-    y - 85 * s
-  );
-  bezierVertex(
-    x - 23 * s,
-    y - 82 * s,
-    x - 50 * s,
-    y - 80 * s,
-    x - 70 * s,
-    y - 76 * s
-  );
-  bezierVertex(
-    x - 74 * s,
-    y - 76 * s,
-    x - 80 * s,
-    y - 65 * s,
-    x - 67 * s,
-    y - 53 * s
-  );
-  bezierVertex(
-    x - 40 * s,
-    y - 30 * s,
-    x - 20 * s,
-    y - 22 * s,
-    x - 10 * s,
-    y - 30 * s
-  );
+  bezierVertex(x + 50 * s, y - 70 * s, x + 40 * s, y - 90 * s, x - 5 * s, y - 85 * s);
+  bezierVertex(x - 23 * s, y - 82 * s, x - 50 * s, y - 80 * s, x - 70 * s, y - 76 * s);
+  bezierVertex(x - 74 * s, y - 76 * s, x - 80 * s, y - 65 * s, x - 67 * s, y - 53 * s);
+  bezierVertex(x - 40 * s, y - 30 * s, x - 20 * s, y - 22 * s, x - 10 * s, y - 30 * s);
   endShape();
   pop();
 
@@ -129,22 +73,8 @@ function maus(x, y, s) {
   fill(0, 0, 0);
   beginShape();
   vertex(x - 66 * s, y - 76 * s);
-  bezierVertex(
-    x - 74 * s,
-    y - 78 * s,
-    x - 80 * s,
-    y - 65 * s,
-    x - 67 * s,
-    y - 53 * s
-  );
-  bezierVertex(
-    x - 63 * s,
-    y - 60 * s,
-    x - 63 * s,
-    y - 67 * s,
-    x - 66 * s,
-    y - 76 * s
-  );
+  bezierVertex(x - 74 * s, y - 78 * s, x - 80 * s, y - 65 * s, x - 67 * s, y - 53 * s);
+  bezierVertex(x - 63 * s, y - 60 * s, x - 63 * s, y - 67 * s, x - 66 * s, y - 76 * s);
   endShape();
   pop();
 
@@ -153,24 +83,10 @@ function maus(x, y, s) {
   fill(255, 255, 255);
   beginShape();
   vertex(x - 20 * s, y - 84 * s);
-  bezierVertex(
-    x - 15 * s,
-    y - 83 * s,
-    x - 4 * s,
-    y - 90 * s,
-    x + 10 * s,
-    y - 85 * s
-  );
+  bezierVertex(x - 15 * s, y - 83 * s, x - 4 * s, y - 90 * s, x + 10 * s, y - 85 * s);
   vertex(x + 12 * s, y - 82 * s);
   bezierVertex(x + 8 * s, y - 77 * s, x, y - 74 * s, x - 15 * s, y - 74 * s);
-  bezierVertex(
-    x - 21 * s,
-    y - 76 * s,
-    x - 24 * s,
-    y - 78 * s,
-    x - 20 * s,
-    y - 84 * s
-  );
+  bezierVertex(x - 21 * s, y - 76 * s, x - 24 * s, y - 78 * s, x - 20 * s, y - 84 * s);
   endShape();
   pop();
 
@@ -179,14 +95,7 @@ function maus(x, y, s) {
   beginShape();
   vertex(x + 2 * s, y - 76 * s);
   vertex(x - 9 * s, y - 74 * s);
-  bezierVertex(
-    x - 13 * s,
-    y - 78 * s,
-    x - 12 * s,
-    y - 81 * s,
-    x - 8 * s,
-    y - 83 * s
-  );
+  bezierVertex(x - 13 * s, y - 78 * s, x - 12 * s, y - 81 * s, x - 8 * s, y - 83 * s);
   endShape();
   pop();
 
@@ -197,14 +106,7 @@ function maus(x, y, s) {
   vertex(x + 2 * s, y - 76 * s);
   vertex(x + 11 * s, y - 79 * s);
   vertex(x + 12 * s, y - 85 * s);
-  bezierVertex(
-    x + 3 * s,
-    y - 88 * s,
-    x - 1 * s,
-    y - 86 * s,
-    x - 12 * s,
-    y - 86 * s
-  );
+  bezierVertex(x + 3 * s, y - 88 * s, x - 1 * s, y - 86 * s, x - 12 * s, y - 86 * s);
   endShape();
   pop();
 
@@ -213,23 +115,9 @@ function maus(x, y, s) {
   fill(255, 255, 255);
   beginShape();
   vertex(x + 20 * s, y - 67 * s);
-  bezierVertex(
-    x + 25 * s,
-    y - 60 * s,
-    x + 25 * s,
-    y - 55 * s,
-    x + 12 * s,
-    y - 49 * s
-  );
+  bezierVertex(x + 25 * s, y - 60 * s, x + 25 * s, y - 55 * s, x + 12 * s, y - 49 * s);
   bezierVertex(x, y - 50 * s, x - 5 * s, y - 59 * s, x - 1 * s, y - 65 * s);
-  bezierVertex(
-    x + 6 * s,
-    y - 68 * s,
-    x + 11 * s,
-    y - 70 * s,
-    x + 20 * s,
-    y - 67 * s
-  );
+  bezierVertex(x + 6 * s, y - 68 * s, x + 11 * s, y - 70 * s, x + 20 * s, y - 67 * s);
   endShape();
   pop();
 
@@ -237,23 +125,9 @@ function maus(x, y, s) {
   fill(0, 0, 0);
   beginShape();
   vertex(x + 9 * s, y - 50 * s);
-  bezierVertex(
-    x + 6 * s,
-    y - 57 * s,
-    x + 7 * s,
-    y - 61 * s,
-    x + 14 * s,
-    y - 62 * s
-  );
+  bezierVertex(x + 6 * s, y - 57 * s, x + 7 * s, y - 61 * s, x + 14 * s, y - 62 * s);
   vertex(x + 19 * s, y - 53 * s);
-  bezierVertex(
-    x + 16 * s,
-    y - 49 * s,
-    x + 13 * s,
-    y - 48 * s,
-    x + 9 * s,
-    y - 50 * s
-  );
+  bezierVertex(x + 16 * s, y - 49 * s, x + 13 * s, y - 48 * s, x + 9 * s, y - 50 * s);
   endShape();
   pop();
 
@@ -261,23 +135,9 @@ function maus(x, y, s) {
   fill(234, 113, 50, 255);
   beginShape();
   vertex(x + 4 * s, y - 70 * s);
-  bezierVertex(
-    x + 13 * s,
-    y - 65 * s,
-    x + 18 * s,
-    y - 60 * s,
-    x + 18 * s,
-    y - 51 * s
-  );
+  bezierVertex(x + 13 * s, y - 65 * s, x + 18 * s, y - 60 * s, x + 18 * s, y - 51 * s);
   vertex(x + 27 * s, y - 60 * s);
-  bezierVertex(
-    x + 32 * s,
-    y - 69 * s,
-    x + 27 * s,
-    y - 74 * s,
-    x + 4 * s,
-    y - 70 * s
-  );
+  bezierVertex(x + 32 * s, y - 69 * s, x + 27 * s, y - 74 * s, x + 4 * s, y - 70 * s);
   endShape();
   pop();
 
@@ -292,22 +152,8 @@ function maus(x, y, s) {
   beginShape();
   vertex(x + 49 * s, y - 9 * s);
   vertex(x + 60 * s, y - 4 * s);
-  bezierVertex(
-    x + 56 * s,
-    y + 20 * s,
-    x + 55 * s,
-    y + 43 * s,
-    x + 57 * s,
-    y + 57 * s
-  );
-  bezierVertex(
-    x + 52 * s,
-    y + 67 * s,
-    x + 45 * s,
-    y + 67 * s,
-    x + 37 * s,
-    y + 64 * s
-  );
+  bezierVertex(x + 56 * s, y + 20 * s, x + 55 * s, y + 43 * s, x + 57 * s, y + 57 * s);
+  bezierVertex(x + 52 * s, y + 67 * s, x + 45 * s, y + 67 * s, x + 37 * s, y + 64 * s);
   vertex(x + 37 * s, y - 2 * s);
   vertex(x + 49 * s, y - 9 * s);
   endShape();
@@ -318,46 +164,11 @@ function maus(x, y, s) {
   fill(0, 0, 0);
   beginShape();
   vertex(x + 23 * s, y + 79 * s);
-  bezierVertex(
-    x + 40 * s,
-    y + 86 * s,
-    x + 51 * s,
-    y + 88 * s,
-    x + 71 * s,
-    y + 85 * s
-  );
-  bezierVertex(
-    x + 88 * s,
-    y + 87 * s,
-    x + 99 * s,
-    y + 96 * s,
-    x + 114 * s,
-    y + 95 * s
-  );
-  bezierVertex(
-    x + 117 * s,
-    y + 95 * s,
-    x + 117 * s,
-    y + 96 * s,
-    x + 114 * s,
-    y + 98 * s
-  );
-  bezierVertex(
-    x + 99 * s,
-    y + 97 * s,
-    x + 88 * s,
-    y + 96 * s,
-    x + 74 * s,
-    y + 93 * s
-  );
-  bezierVertex(
-    x + 50 * s,
-    y + 94 * s,
-    x + 30 * s,
-    y + 97 * s,
-    x + 12 * s,
-    y + 84 * s
-  );
+  bezierVertex(x + 40 * s, y + 86 * s, x + 51 * s, y + 88 * s, x + 71 * s, y + 85 * s);
+  bezierVertex(x + 88 * s, y + 87 * s, x + 99 * s, y + 96 * s, x + 114 * s, y + 95 * s);
+  bezierVertex(x + 117 * s, y + 95 * s, x + 117 * s, y + 96 * s, x + 114 * s, y + 98 * s);
+  bezierVertex(x + 99 * s, y + 97 * s, x + 88 * s, y + 96 * s, x + 74 * s, y + 93 * s);
+  bezierVertex(x + 50 * s, y + 94 * s, x + 30 * s, y + 97 * s, x + 12 * s, y + 84 * s);
   endShape();
   pop();
 
@@ -366,14 +177,7 @@ function maus(x, y, s) {
   fill(255, 255, 255, 10);
   beginShape();
   vertex(x - 58 * s, y - 22 * s);
-  bezierVertex(
-    x - 190 * s,
-    y - 180 * s,
-    x + 180 * s,
-    y - 180 * s,
-    x + 51 * s,
-    y - 17 * s
-  );
+  bezierVertex(x - 190 * s, y - 180 * s, x + 180 * s, y - 180 * s, x + 51 * s, y - 17 * s);
   endShape();
   pop();
 
@@ -381,38 +185,10 @@ function maus(x, y, s) {
   fill(255, 255, 255, 200);
   beginShape();
   vertex(x - 16 * s, y - 125 * s);
-  bezierVertex(
-    x - 28 * s,
-    y - 125 * s,
-    x - 41 * s,
-    y - 123 * s,
-    x - 53 * s,
-    y - 117 * s
-  );
-  bezierVertex(
-    x - 59 * s,
-    y - 115 * s,
-    x - 60 * s,
-    y - 118 * s,
-    x - 57 * s,
-    y - 123 * s
-  );
-  bezierVertex(
-    x - 50 * s,
-    y - 129 * s,
-    x - 32 * s,
-    y - 132 * s,
-    x - 20 * s,
-    y - 132 * s
-  );
-  bezierVertex(
-    x - 12 * s,
-    y - 132 * s,
-    x - 8 * s,
-    y - 127 * s,
-    x - 16 * s,
-    y - 125 * s
-  );
+  bezierVertex(x - 28 * s, y - 125 * s, x - 41 * s, y - 123 * s, x - 53 * s, y - 117 * s);
+  bezierVertex(x - 59 * s, y - 115 * s, x - 60 * s, y - 118 * s, x - 57 * s, y - 123 * s);
+  bezierVertex(x - 50 * s, y - 129 * s, x - 32 * s, y - 132 * s, x - 20 * s, y - 132 * s);
+  bezierVertex(x - 12 * s, y - 132 * s, x - 8 * s, y - 127 * s, x - 16 * s, y - 125 * s);
   endShape();
   pop();
 
@@ -421,48 +197,13 @@ function maus(x, y, s) {
   fill(233, 226, 210, 255);
   beginShape();
   vertex(x - 109 * s, y - 7 * s);
-  bezierVertex(
-    x - 109 * s,
-    y - 17 * s,
-    x - 112 * s,
-    y - 19 * s,
-    x - 115 * s,
-    y - 19 * s
-  );
-  bezierVertex(
-    x - 134 * s,
-    y - 20 * s,
-    x - 130 * s,
-    y + 8 * s,
-    x - 111 * s,
-    y + 9 * s
-  );
-  bezierVertex(
-    x - 112 * s,
-    y + 13 * s,
-    x - 93 * s,
-    y + 4 * s,
-    x - 79 * s,
-    y + 12 * s
-  );
-  bezierVertex(
-    x - 71 * s,
-    y + 11 * s,
-    x - 65 * s,
-    y + 15 * s,
-    x - 61 * s,
-    y + 16 * s
-  );
+  bezierVertex(x - 109 * s, y - 17 * s, x - 112 * s, y - 19 * s, x - 115 * s, y - 19 * s);
+  bezierVertex(x - 134 * s, y - 20 * s, x - 130 * s, y + 8 * s, x - 111 * s, y + 9 * s);
+  bezierVertex(x - 112 * s, y + 13 * s, x - 93 * s, y + 4 * s, x - 79 * s, y + 12 * s);
+  bezierVertex(x - 71 * s, y + 11 * s, x - 65 * s, y + 15 * s, x - 61 * s, y + 16 * s);
   vertex(x - 50 * s, y - 2 * s);
   vertex(x - 56 * s, y - 15 * s);
-  bezierVertex(
-    x - 77 * s,
-    y - 11 * s,
-    x - 96 * s,
-    y - 8 * s,
-    x - 110 * s,
-    y - 14 * s
-  );
+  bezierVertex(x - 77 * s, y - 11 * s, x - 96 * s, y - 8 * s, x - 110 * s, y - 14 * s);
   endShape();
   pop();
 
@@ -470,46 +211,11 @@ function maus(x, y, s) {
   fill(133, 86, 53, 255);
   beginShape();
   vertex(x - 102 * s, y - 12 * s);
-  bezierVertex(
-    x - 102 * s,
-    y - 16 * s,
-    x - 98 * s,
-    y - 13 * s,
-    x - 95 * s,
-    y - 11 * s
-  );
-  bezierVertex(
-    x - 93 * s,
-    y - 15 * s,
-    x - 86 * s,
-    y - 15 * s,
-    x - 84 * s,
-    y - 12 * s
-  );
-  bezierVertex(
-    x - 78 * s,
-    y - 5 * s,
-    x - 79 * s,
-    y + 4 * s,
-    x - 84 * s,
-    y + 10 * s
-  );
-  bezierVertex(
-    x - 91 * s,
-    y + 11 * s,
-    x - 98 * s,
-    y + 10 * s,
-    x - 107 * s,
-    y + 9 * s
-  );
-  bezierVertex(
-    x - 106 * s,
-    y + 3 * s,
-    x - 107 * s,
-    y - 7 * s,
-    x - 102 * s,
-    y - 12 * s
-  );
+  bezierVertex(x - 102 * s, y - 16 * s, x - 98 * s, y - 13 * s, x - 95 * s, y - 11 * s);
+  bezierVertex(x - 93 * s, y - 15 * s, x - 86 * s, y - 15 * s, x - 84 * s, y - 12 * s);
+  bezierVertex(x - 78 * s, y - 5 * s, x - 79 * s, y + 4 * s, x - 84 * s, y + 10 * s);
+  bezierVertex(x - 91 * s, y + 11 * s, x - 98 * s, y + 10 * s, x - 107 * s, y + 9 * s);
+  bezierVertex(x - 106 * s, y + 3 * s, x - 107 * s, y - 7 * s, x - 102 * s, y - 12 * s);
   endShape();
   pop();
 
@@ -532,39 +238,11 @@ function maus(x, y, s) {
   vertex(x - 40 * s, y + 98 * s);
   vertex(x - 44 * s, y + 98 * s);
   vertex(x - 44 * s, y + 120 * s);
-  bezierVertex(
-    x - 53 * s,
-    y + 128 * s,
-    x - 70 * s,
-    y + 123 * s,
-    x - 73 * s,
-    y + 120 * s
-  );
-  bezierVertex(
-    x - 75 * s,
-    y + 117 * s,
-    x - 72 * s,
-    y + 110 * s,
-    x - 65 * s,
-    y + 109 * s
-  );
+  bezierVertex(x - 53 * s, y + 128 * s, x - 70 * s, y + 123 * s, x - 73 * s, y + 120 * s);
+  bezierVertex(x - 75 * s, y + 117 * s, x - 72 * s, y + 110 * s, x - 65 * s, y + 109 * s);
   vertex(x - 65 * s, y + 100 * s);
-  bezierVertex(
-    x - 72 * s,
-    y + 90 * s,
-    x - 70 * s,
-    y + 90 * s,
-    x - 66 * s,
-    y + 83 * s
-  );
-  bezierVertex(
-    x - 62 * s,
-    y + 78 * s,
-    x - 61 * s,
-    y + 74 * s,
-    x - 57 * s,
-    y + 72 * s
-  );
+  bezierVertex(x - 72 * s, y + 90 * s, x - 70 * s, y + 90 * s, x - 66 * s, y + 83 * s);
+  bezierVertex(x - 62 * s, y + 78 * s, x - 61 * s, y + 74 * s, x - 57 * s, y + 72 * s);
   endShape();
   pop();
 
@@ -583,39 +261,11 @@ function maus(x, y, s) {
   fill(133, 86, 53, 255);
   beginShape();
   vertex(x - 44 * s, y + 98 * s);
-  bezierVertex(
-    x - 51 * s,
-    y + 97 * s,
-    x - 59 * s,
-    y + 97 * s,
-    x - 68 * s,
-    y + 95 * s
-  );
-  bezierVertex(
-    x - 70 * s,
-    y + 99 * s,
-    x - 69 * s,
-    y + 102 * s,
-    x - 66 * s,
-    y + 104 * s
-  );
-  bezierVertex(
-    x - 69 * s,
-    y + 106 * s,
-    x - 68 * s,
-    y + 108 * s,
-    x - 64 * s,
-    y + 109 * s
-  );
+  bezierVertex(x - 51 * s, y + 97 * s, x - 59 * s, y + 97 * s, x - 68 * s, y + 95 * s);
+  bezierVertex(x - 70 * s, y + 99 * s, x - 69 * s, y + 102 * s, x - 66 * s, y + 104 * s);
+  bezierVertex(x - 69 * s, y + 106 * s, x - 68 * s, y + 108 * s, x - 64 * s, y + 109 * s);
   vertex(x - 45 * s, y + 109 * s);
-  bezierVertex(
-    x - 42 * s,
-    y + 105 * s,
-    x - 43 * s,
-    y + 101 * s,
-    x - 44 * s,
-    y + 98 * s
-  );
+  bezierVertex(x - 42 * s, y + 105 * s, x - 43 * s, y + 101 * s, x - 44 * s, y + 98 * s);
   endShape();
   pop();
 
@@ -627,30 +277,9 @@ function maus(x, y, s) {
   fill(233, 226, 210, 255);
   beginShape();
   vertex(x - 60 * s, y - 22 * s);
-  bezierVertex(
-    x - 14 * s,
-    y - 10 * s,
-    x + 21 * s,
-    y - 9 * s,
-    x + 53 * s,
-    y - 18 * s
-  );
-  bezierVertex(
-    x + 43 * s,
-    y + 15 * s,
-    x + 37 * s,
-    y + 30 * s,
-    x + 40 * s,
-    y + 70 * s
-  );
-  bezierVertex(
-    x + 5 * s,
-    y + 100 * s,
-    x - 40 * s,
-    y + 90 * s,
-    x - 63 * s,
-    y + 70 * s
-  );
+  bezierVertex(x - 14 * s, y - 10 * s, x + 21 * s, y - 9 * s, x + 53 * s, y - 18 * s);
+  bezierVertex(x + 43 * s, y + 15 * s, x + 37 * s, y + 30 * s, x + 40 * s, y + 70 * s);
+  bezierVertex(x + 5 * s, y + 100 * s, x - 40 * s, y + 90 * s, x - 63 * s, y + 70 * s);
   bezierVertex(x - 80 * s, y + 30 * s, x - 55 * s, y, x - 56 * s, y - 5 * s);
   vertex(x - 57 * s, y - 10 * s);
   vertex(x - 60 * s, y - 23 * s);
@@ -664,14 +293,7 @@ function maus(x, y, s) {
   bezierVertex(x - 22 * s, y + 7 * s, x + 16 * s, y + 9 * s, x + 47 * s, y);
   vertex(x + 50 * s, y - 8 * s);
   bezierVertex(x + 18 * s, y, x - 22 * s, y - 1 * s, x - 57 * s, y - 14 * s);
-  bezierVertex(
-    x - 59 * s,
-    y - 11 * s,
-    x - 58 * s,
-    y - 8 * s,
-    x - 56 * s,
-    y - 5 * s
-  );
+  bezierVertex(x - 59 * s, y - 11 * s, x - 58 * s, y - 8 * s, x - 56 * s, y - 5 * s);
   endShape();
   pop();
 
@@ -680,14 +302,7 @@ function maus(x, y, s) {
   fill(233, 226, 210, 255);
   beginShape();
   vertex(x - 38 * s, y + 85 * s);
-  bezierVertex(
-    x - 39 * s,
-    y + 49 * s,
-    x - 34 * s,
-    y + 30 * s,
-    x - 30 * s,
-    y + 13 * s
-  );
+  bezierVertex(x - 39 * s, y + 49 * s, x - 34 * s, y + 30 * s, x - 30 * s, y + 13 * s);
   endShape();
   pop();
 
@@ -715,14 +330,7 @@ function maus(x, y, s) {
   beginShape();
   vertex(x + 38 * s, y + 31 * s);
   vertex(x + 29 * s, y + 28 * s);
-  bezierVertex(
-    x + 27 * s,
-    y + 15 * s,
-    x + 31 * s,
-    y + 6 * s,
-    x + 34 * s,
-    y + 3 * s
-  );
+  bezierVertex(x + 27 * s, y + 15 * s, x + 31 * s, y + 6 * s, x + 34 * s, y + 3 * s);
   vertex(x + 40 * s, y + 2 * s);
   endShape();
   pop();
@@ -731,54 +339,12 @@ function maus(x, y, s) {
   fill(233, 226, 210, 255);
   beginShape();
   vertex(x + 76 * s, y + 18 * s);
-  bezierVertex(
-    x + 75 * s,
-    y + 14 * s,
-    x + 81 * s,
-    y + 4 * s,
-    x + 87 * s,
-    y + 6 * s
-  );
-  bezierVertex(
-    x + 103 * s,
-    y + 10 * s,
-    x + 97 * s,
-    y + 37 * s,
-    x + 77 * s,
-    y + 35 * s
-  );
-  bezierVertex(
-    x + 65 * s,
-    y + 31 * s,
-    x + 59 * s,
-    y + 30 * s,
-    x + 53 * s,
-    y + 30 * s
-  );
-  bezierVertex(
-    x + 43 * s,
-    y + 32 * s,
-    x + 38 * s,
-    y + 31 * s,
-    x + 34 * s,
-    y + 29 * s
-  );
-  bezierVertex(
-    x + 34 * s,
-    y + 17 * s,
-    x + 36 * s,
-    y + 4 * s,
-    x + 43 * s,
-    y + 2 * s
-  );
-  bezierVertex(
-    x + 62 * s,
-    y + 9 * s,
-    x + 70 * s,
-    y + 10 * s,
-    x + 78 * s,
-    y + 9 * s
-  );
+  bezierVertex(x + 75 * s, y + 14 * s, x + 81 * s, y + 4 * s, x + 87 * s, y + 6 * s);
+  bezierVertex(x + 103 * s, y + 10 * s, x + 97 * s, y + 37 * s, x + 77 * s, y + 35 * s);
+  bezierVertex(x + 65 * s, y + 31 * s, x + 59 * s, y + 30 * s, x + 53 * s, y + 30 * s);
+  bezierVertex(x + 43 * s, y + 32 * s, x + 38 * s, y + 31 * s, x + 34 * s, y + 29 * s);
+  bezierVertex(x + 34 * s, y + 17 * s, x + 36 * s, y + 4 * s, x + 43 * s, y + 2 * s);
+  bezierVertex(x + 62 * s, y + 9 * s, x + 70 * s, y + 10 * s, x + 78 * s, y + 9 * s);
   endShape();
   pop();
 
@@ -786,38 +352,10 @@ function maus(x, y, s) {
   fill(133, 86, 53, 255);
   beginShape();
   vertex(x + 54 * s, y + 30 * s);
-  bezierVertex(
-    x + 53 * s,
-    y + 22 * s,
-    x + 53 * s,
-    y + 15 * s,
-    x + 58 * s,
-    y + 7 * s
-  );
-  bezierVertex(
-    x + 61 * s,
-    y + 4 * s,
-    x + 59 * s,
-    y + 6 * s,
-    x + 72 * s,
-    y + 9 * s
-  );
-  bezierVertex(
-    x + 67 * s,
-    y + 17 * s,
-    x + 65 * s,
-    y + 23 * s,
-    x + 67 * s,
-    y + 32 * s
-  );
-  bezierVertex(
-    x + 61 * s,
-    y + 31 * s,
-    x + 59 * s,
-    y + 30 * s,
-    x + 54 * s,
-    y + 30 * s
-  );
+  bezierVertex(x + 53 * s, y + 22 * s, x + 53 * s, y + 15 * s, x + 58 * s, y + 7 * s);
+  bezierVertex(x + 61 * s, y + 4 * s, x + 59 * s, y + 6 * s, x + 72 * s, y + 9 * s);
+  bezierVertex(x + 67 * s, y + 17 * s, x + 65 * s, y + 23 * s, x + 67 * s, y + 32 * s);
+  bezierVertex(x + 61 * s, y + 31 * s, x + 59 * s, y + 30 * s, x + 54 * s, y + 30 * s);
   endShape();
   pop();
 
@@ -833,22 +371,8 @@ function maus(x, y, s) {
   vertex(x + 22 * s, y + 82 * s);
   vertex(x + 18 * s, y + 108 * s);
   vertex(x + 17 * s, y + 127 * s);
-  bezierVertex(
-    x + 11 * s,
-    y + 132 * s,
-    x - 7 * s,
-    y + 131 * s,
-    x - 14 * s,
-    y + 127 * s
-  );
-  bezierVertex(
-    x - 14 * s,
-    y + 123 * s,
-    x - 9 * s,
-    y + 119 * s,
-    x - 6 * s,
-    y + 118 * s
-  );
+  bezierVertex(x + 11 * s, y + 132 * s, x - 7 * s, y + 131 * s, x - 14 * s, y + 127 * s);
+  bezierVertex(x - 14 * s, y + 123 * s, x - 9 * s, y + 119 * s, x - 6 * s, y + 118 * s);
   vertex(x - 6 * s, y + 110 * s);
   vertex(x - 10 * s, y + 97 * s);
   vertex(x - 8 * s, y + 85 * s);
@@ -860,38 +384,10 @@ function maus(x, y, s) {
   fill(233, 226, 210, 255);
   beginShape();
   vertex(x + 21 * s, y + 85 * s);
-  bezierVertex(
-    x + 11 * s,
-    y + 83 * s,
-    x + 8 * s,
-    y + 81 * s,
-    x - 10 * s,
-    y + 89 * s
-  );
-  bezierVertex(
-    x - 10 * s,
-    y + 86 * s,
-    x - 9 * s,
-    y + 84 * s,
-    x - 7 * s,
-    y + 83 * s
-  );
-  bezierVertex(
-    x + 8 * s,
-    y + 77 * s,
-    x + 14 * s,
-    y + 79 * s,
-    x + 22 * s,
-    y + 81 * s
-  );
-  bezierVertex(
-    x + 24 * s,
-    y + 83 * s,
-    x + 24 * s,
-    y + 87 * s,
-    x + 21 * s,
-    y + 85 * s
-  );
+  bezierVertex(x + 11 * s, y + 83 * s, x + 8 * s, y + 81 * s, x - 10 * s, y + 89 * s);
+  bezierVertex(x - 10 * s, y + 86 * s, x - 9 * s, y + 84 * s, x - 7 * s, y + 83 * s);
+  bezierVertex(x + 8 * s, y + 77 * s, x + 14 * s, y + 79 * s, x + 22 * s, y + 81 * s);
+  bezierVertex(x + 24 * s, y + 83 * s, x + 24 * s, y + 87 * s, x + 21 * s, y + 85 * s);
   endShape();
   pop();
 
@@ -900,23 +396,9 @@ function maus(x, y, s) {
   beginShape();
   vertex(x - 9 * s, y + 100 * s);
   vertex(x - 8 * s, y + 111 * s);
-  bezierVertex(
-    x - 2 * s,
-    y + 113 * s,
-    x + 11 * s,
-    y + 113 * s,
-    x + 18 * s,
-    y + 110 * s
-  );
+  bezierVertex(x - 2 * s, y + 113 * s, x + 11 * s, y + 113 * s, x + 18 * s, y + 110 * s);
   vertex(x + 20 * s, y + 99 * s);
-  bezierVertex(
-    x + 11 * s,
-    y + 99 * s,
-    x - 1 * s,
-    y + 102 * s,
-    x - 9 * s,
-    y + 100 * s
-  );
+  bezierVertex(x + 11 * s, y + 99 * s, x - 1 * s, y + 102 * s, x - 9 * s, y + 100 * s);
   endShape();
   pop();
 
@@ -941,14 +423,7 @@ function elefant(x, y, s) {
   beginShape();
   vertex(x + 135 * s, y + 28 * s);
   vertex(x + 162 * s, y + 54 * s);
-  bezierVertex(
-    x + 156 * s,
-    y + 74 * s,
-    x + 144 * s,
-    y + 81 * s,
-    x + 134 * s,
-    y + 84 * s
-  );
+  bezierVertex(x + 156 * s, y + 74 * s, x + 144 * s, y + 81 * s, x + 134 * s, y + 84 * s);
   vertex(x + 104 * s, y + 60 * s);
   endShape();
   pop();
@@ -958,23 +433,9 @@ function elefant(x, y, s) {
   beginShape();
   vertex(x + 159 * s, y + 51 * s);
   vertex(x + 167 * s, y + 59 * s);
-  bezierVertex(
-    x + 165 * s,
-    y + 72 * s,
-    x + 153 * s,
-    y + 84 * s,
-    x + 141 * s,
-    y + 90 * s
-  );
+  bezierVertex(x + 165 * s, y + 72 * s, x + 153 * s, y + 84 * s, x + 141 * s, y + 90 * s);
   vertex(x + 132 * s, y + 82 * s);
-  bezierVertex(
-    x + 144 * s,
-    y + 76 * s,
-    x + 154 * s,
-    y + 66 * s,
-    x + 159 * s,
-    y + 51 * s
-  );
+  bezierVertex(x + 144 * s, y + 76 * s, x + 154 * s, y + 66 * s, x + 159 * s, y + 51 * s);
   endShape();
   pop();
 
@@ -986,23 +447,9 @@ function elefant(x, y, s) {
   vertex(x + 116 * s, y + 82 * s);
   vertex(x + 119 * s, y + 82 * s);
   vertex(x + 119 * s, y + 97 * s);
-  bezierVertex(
-    x + 125 * s,
-    y + 100 * s,
-    x + 125 * s,
-    y + 103 * s,
-    x + 123 * s,
-    y + 107 * s
-  );
+  bezierVertex(x + 125 * s, y + 100 * s, x + 125 * s, y + 103 * s, x + 123 * s, y + 107 * s);
   vertex(x + 118 * s, y + 112 * s);
-  bezierVertex(
-    x + 105 * s,
-    y + 115 * s,
-    x + 95 * s,
-    y + 113 * s,
-    x + 84 * s,
-    y + 112 * s
-  );
+  bezierVertex(x + 105 * s, y + 115 * s, x + 95 * s, y + 113 * s, x + 84 * s, y + 112 * s);
   vertex(x + 80 * s, y + 106 * s);
   vertex(x + 79 * s, y + 75 * s);
   endShape();
@@ -1013,23 +460,9 @@ function elefant(x, y, s) {
   beginShape();
   vertex(x + 119 * s, y + 86 * s);
   vertex(x + 122 * s, y + 95 * s);
-  bezierVertex(
-    x + 115 * s,
-    y + 103 * s,
-    x + 95 * s,
-    y + 105 * s,
-    x + 80 * s,
-    y + 105 * s
-  );
+  bezierVertex(x + 115 * s, y + 103 * s, x + 95 * s, y + 105 * s, x + 80 * s, y + 105 * s);
   vertex(x + 77 * s, y + 96 * s);
-  bezierVertex(
-    x + 92 * s,
-    y + 94 * s,
-    x + 105 * s,
-    y + 95 * s,
-    x + 119 * s,
-    y + 86 * s
-  );
+  bezierVertex(x + 92 * s, y + 94 * s, x + 105 * s, y + 95 * s, x + 119 * s, y + 86 * s);
   endShape();
   pop();
 
@@ -1042,22 +475,8 @@ function elefant(x, y, s) {
   beginShape();
   vertex(x + 15 * s, y + 87 * s);
   vertex(x - 2 * s, y + 102 * s);
-  bezierVertex(
-    x - 17 * s,
-    y + 96 * s,
-    x - 28 * s,
-    y + 84 * s,
-    x - 30 * s,
-    y + 77 * s
-  );
-  bezierVertex(
-    x - 34 * s,
-    y + 67 * s,
-    x - 25 * s,
-    y + 67 * s,
-    x - 18 * s,
-    y + 72 * s
-  );
+  bezierVertex(x - 17 * s, y + 96 * s, x - 28 * s, y + 84 * s, x - 30 * s, y + 77 * s);
+  bezierVertex(x - 34 * s, y + 67 * s, x - 25 * s, y + 67 * s, x - 18 * s, y + 72 * s);
   vertex(x - 13 * s, y + 60 * s);
   endShape();
   pop();
@@ -1066,14 +485,7 @@ function elefant(x, y, s) {
   fill("#8b553f");
   beginShape();
   vertex(x - 18 * s, y + 72 * s);
-  bezierVertex(
-    x - 16 * s,
-    y + 84 * s,
-    x - 7 * s,
-    y + 94 * s,
-    x + 5 * s,
-    y + 97 * s
-  );
+  bezierVertex(x - 16 * s, y + 84 * s, x - 7 * s, y + 94 * s, x + 5 * s, y + 97 * s);
   vertex(x + 14 * s, y + 89 * s);
   vertex(x - 16 * s, y + 61 * s);
   vertex(x - 18 * s, y + 72 * s);
@@ -1087,36 +499,15 @@ function elefant(x, y, s) {
   fill(0, 0, 0);
   beginShape();
   vertex(x + 140 * s, y - 35 * s);
-  bezierVertex(
-    x + 143 * s,
-    y - 55 * s,
-    x + 160 * s,
-    y - 31 * s,
-    x + 175 * s,
-    y - 72 * s
-  );
+  bezierVertex(x + 143 * s, y - 55 * s, x + 160 * s, y - 31 * s, x + 175 * s, y - 72 * s);
   vertex(x + 179 * s, y - 86 * s);
   vertex(x + 180 * s, y - 78 * s);
   vertex(x + 183 * s, y - 90 * s);
   vertex(x + 184 * s, y - 80 * s);
   vertex(x + 190 * s, y - 84 * s);
   vertex(x + 181 * s, y - 73 * s);
-  bezierVertex(
-    x + 180 * s,
-    y - 70 * s,
-    x + 178 * s,
-    y - 68 * s,
-    x + 175 * s,
-    y - 68 * s
-  );
-  bezierVertex(
-    x + 164 * s,
-    y - 63 * s,
-    x + 158 * s,
-    y - 56 * s,
-    x + 148 * s,
-    y - 32 * s
-  );
+  bezierVertex(x + 180 * s, y - 70 * s, x + 178 * s, y - 68 * s, x + 175 * s, y - 68 * s);
+  bezierVertex(x + 164 * s, y - 63 * s, x + 158 * s, y - 56 * s, x + 148 * s, y - 32 * s);
   endShape();
   pop();
 
@@ -1137,38 +528,10 @@ function elefant(x, y, s) {
   fill("#252b56");
   beginShape();
   vertex(x + 111 * s, y - 12 * s);
-  bezierVertex(
-    x - 2 * s,
-    y - 23 * s,
-    x + 86 * s,
-    y - 33 * s,
-    x + 75 * s,
-    y - 50 * s
-  );
-  bezierVertex(
-    x + 74 * s,
-    y - 82 * s,
-    x + 90 * s,
-    y - 93 * s,
-    x + 108 * s,
-    y - 94 * s
-  );
-  bezierVertex(
-    x + 140 * s,
-    y - 89 * s,
-    x + 159 * s,
-    y - 62 * s,
-    x + 154 * s,
-    y - 44 * s
-  );
-  bezierVertex(
-    x + 147 * s,
-    y - 23 * s,
-    x + 135 * s,
-    y - 14 * s,
-    x + 111 * s,
-    y - 12 * s
-  );
+  bezierVertex(x - 2 * s, y - 23 * s, x + 86 * s, y - 33 * s, x + 75 * s, y - 50 * s);
+  bezierVertex(x + 74 * s, y - 82 * s, x + 90 * s, y - 93 * s, x + 108 * s, y - 94 * s);
+  bezierVertex(x + 140 * s, y - 89 * s, x + 159 * s, y - 62 * s, x + 154 * s, y - 44 * s);
+  bezierVertex(x + 147 * s, y - 23 * s, x + 135 * s, y - 14 * s, x + 111 * s, y - 12 * s);
   endShape();
   pop();
 
@@ -1181,38 +544,10 @@ function elefant(x, y, s) {
   fill("#252b56");
   beginShape();
   vertex(x + 22 * s, y - 48 * s);
-  bezierVertex(
-    x + 23 * s,
-    y - 53 * s,
-    x + 26 * s,
-    y - 58 * s,
-    x + 26 * s,
-    y - 69 * s
-  );
-  bezierVertex(
-    x + 16 * s,
-    y - 87 * s,
-    x - 4 * s,
-    y - 87 * s,
-    x - 17 * s,
-    y - 87 * s
-  );
-  bezierVertex(
-    x - 46 * s,
-    y - 78 * s,
-    x - 50 * s,
-    y - 71 * s,
-    x - 52 * s,
-    y - 54 * s
-  );
-  bezierVertex(
-    x - 52 * s,
-    y - 30 * s,
-    x - 38 * s,
-    y - 16 * s,
-    x - 21 * s,
-    y - 15 * s
-  );
+  bezierVertex(x + 23 * s, y - 53 * s, x + 26 * s, y - 58 * s, x + 26 * s, y - 69 * s);
+  bezierVertex(x + 16 * s, y - 87 * s, x - 4 * s, y - 87 * s, x - 17 * s, y - 87 * s);
+  bezierVertex(x - 46 * s, y - 78 * s, x - 50 * s, y - 71 * s, x - 52 * s, y - 54 * s);
+  bezierVertex(x - 52 * s, y - 30 * s, x - 38 * s, y - 16 * s, x - 21 * s, y - 15 * s);
   vertex(x + 22 * s, y - 48 * s);
   endShape();
   pop();
@@ -1228,14 +563,7 @@ function elefant(x, y, s) {
 
   beginShape();
   vertex(x - 22 * s, y - 9 * s);
-  bezierVertex(
-    x - 20 * s,
-    y + 110 * s,
-    x + 97 * s,
-    y + 81 * s,
-    x + 108 * s,
-    y + 25 * s
-  );
+  bezierVertex(x - 20 * s, y + 110 * s, x + 97 * s, y + 81 * s, x + 108 * s, y + 25 * s);
   endShape();
   pop();
 
@@ -1244,38 +572,10 @@ function elefant(x, y, s) {
   fill("#252b56");
   beginShape();
   vertex(x + 24 * s, y - 39 * s);
-  bezierVertex(
-    x - 3 * s,
-    y - 12 * s,
-    x - 8 * s,
-    y + 20 * s,
-    x + 8 * s,
-    y + 49 * s
-  );
-  bezierVertex(
-    x + 3 * s,
-    y + 84 * s,
-    x + 9 * s,
-    y + 96 * s,
-    x + 24 * s,
-    y + 99 * s
-  );
-  bezierVertex(
-    x + 50 * s,
-    y + 102 * s,
-    x + 64 * s,
-    y + 92 * s,
-    x + 77 * s,
-    y + 48 * s
-  );
-  bezierVertex(
-    x + 90 * s,
-    y + 36 * s,
-    x + 97 * s,
-    y + 18 * s,
-    x + 92 * s,
-    y - 16 * s
-  );
+  bezierVertex(x - 3 * s, y - 12 * s, x - 8 * s, y + 20 * s, x + 8 * s, y + 49 * s);
+  bezierVertex(x + 3 * s, y + 84 * s, x + 9 * s, y + 96 * s, x + 24 * s, y + 99 * s);
+  bezierVertex(x + 50 * s, y + 102 * s, x + 64 * s, y + 92 * s, x + 77 * s, y + 48 * s);
+  bezierVertex(x + 90 * s, y + 36 * s, x + 97 * s, y + 18 * s, x + 92 * s, y - 16 * s);
   vertex(x + 61 * s, y - 35 * s);
   vertex(x + 31 * s, y - 42 * s);
   endShape();
@@ -1288,22 +588,8 @@ function elefant(x, y, s) {
   fill(255, 255, 255);
   beginShape();
   vertex(x + 22 * s, y - 17 * s);
-  bezierVertex(
-    x + 10 * s,
-    y - 10 * s,
-    x + 9 * s,
-    y + 8 * s,
-    x + 15 * s,
-    y + 12 * s
-  );
-  bezierVertex(
-    x + 29 * s,
-    y + 17 * s,
-    x + 39 * s,
-    y - 23 * s,
-    x + 22 * s,
-    y - 17 * s
-  );
+  bezierVertex(x + 10 * s, y - 10 * s, x + 9 * s, y + 8 * s, x + 15 * s, y + 12 * s);
+  bezierVertex(x + 29 * s, y + 17 * s, x + 39 * s, y - 23 * s, x + 22 * s, y - 17 * s);
   endShape();
   pop();
 
@@ -1311,22 +597,8 @@ function elefant(x, y, s) {
   fill(0, 0, 0);
   beginShape();
   vertex(x + 23 * s, y + 10 * s);
-  bezierVertex(
-    x + 13 * s,
-    y + 5 * s,
-    x + 19 * s,
-    y - 10 * s,
-    x + 30 * s,
-    y - 2 * s
-  );
-  bezierVertex(
-    x + 29 * s,
-    y + 4 * s,
-    x + 26 * s,
-    y + 7 * s,
-    x + 23 * s,
-    y + 10 * s
-  );
+  bezierVertex(x + 13 * s, y + 5 * s, x + 19 * s, y - 10 * s, x + 30 * s, y - 2 * s);
+  bezierVertex(x + 29 * s, y + 4 * s, x + 26 * s, y + 7 * s, x + 23 * s, y + 10 * s);
   endShape();
   pop();
 
@@ -1335,22 +607,8 @@ function elefant(x, y, s) {
   fill(255, 255, 255);
   beginShape();
   vertex(x + 59 * s, y - 12 * s);
-  bezierVertex(
-    x + 45 * s,
-    y - 10 * s,
-    x + 37 * s,
-    y + 12 * s,
-    x + 55 * s,
-    y + 20 * s
-  );
-  bezierVertex(
-    x + 75 * s,
-    y + 21 * s,
-    x + 76 * s,
-    y - 12 * s,
-    x + 59 * s,
-    y - 12 * s
-  );
+  bezierVertex(x + 45 * s, y - 10 * s, x + 37 * s, y + 12 * s, x + 55 * s, y + 20 * s);
+  bezierVertex(x + 75 * s, y + 21 * s, x + 76 * s, y - 12 * s, x + 59 * s, y - 12 * s);
   endShape();
   pop();
 
@@ -1358,22 +616,8 @@ function elefant(x, y, s) {
   fill(0, 0, 0);
   beginShape();
   vertex(x + 59 * s, y + 19 * s);
-  bezierVertex(
-    x + 42 * s,
-    y + 8 * s,
-    x + 65 * s,
-    y - 9 * s,
-    x + 69 * s,
-    y + 10 * s
-  );
-  bezierVertex(
-    x + 68 * s,
-    y + 17 * s,
-    x + 63 * s,
-    y + 19 * s,
-    x + 59 * s,
-    y + 19 * s
-  );
+  bezierVertex(x + 42 * s, y + 8 * s, x + 65 * s, y - 9 * s, x + 69 * s, y + 10 * s);
+  bezierVertex(x + 68 * s, y + 17 * s, x + 63 * s, y + 19 * s, x + 59 * s, y + 19 * s);
   endShape();
   pop();
 
@@ -1387,22 +631,8 @@ function elefant(x, y, s) {
   fill("#7090a9");
   beginShape();
   vertex(x - 25 * s, y + 55 * s);
-  bezierVertex(
-    x - 13 * s,
-    y + 66 * s,
-    x - 5 * s,
-    y + 76 * s,
-    x + 8 * s,
-    y + 86 * s
-  );
-  bezierVertex(
-    x + 2 * s,
-    y + 96 * s,
-    x - 30 * s,
-    y + 63 * s,
-    x - 25 * s,
-    y + 55 * s
-  );
+  bezierVertex(x - 13 * s, y + 66 * s, x - 5 * s, y + 76 * s, x + 8 * s, y + 86 * s);
+  bezierVertex(x + 2 * s, y + 96 * s, x - 30 * s, y + 63 * s, x - 25 * s, y + 55 * s);
   endShape();
   pop();
 
@@ -1411,86 +641,16 @@ function elefant(x, y, s) {
   fill("#f2eeec");
   beginShape();
   vertex(x + 82 * s, y + 92 * s);
-  bezierVertex(
-    x + 105 * s,
-    y + 70 * s,
-    x + 119 * s,
-    y + 56 * s,
-    x + 127 * s,
-    y + 35 * s
-  );
-  bezierVertex(
-    x + 127 * s,
-    y + 4 * s,
-    x + 115 * s,
-    y - 26 * s,
-    x + 90 * s,
-    y - 41 * s
-  );
-  bezierVertex(
-    x + 77 * s,
-    y - 46 * s,
-    x + 65 * s,
-    y - 50 * s,
-    x + 58 * s,
-    y - 53 * s
-  );
-  bezierVertex(
-    x + 41 * s,
-    y - 57 * s,
-    x + 34 * s,
-    y - 57 * s,
-    x + 23 * s,
-    y - 55 * s
-  );
-  bezierVertex(
-    x + 11 * s,
-    y - 51 * s,
-    x + 5 * s,
-    y - 48 * s,
-    x - 4 * s,
-    y - 42 * s
-  );
-  bezierVertex(
-    x - 17 * s,
-    y - 37 * s,
-    x - 22 * s,
-    y - 30 * s,
-    x - 32 * s,
-    y - 1 * s
-  );
-  bezierVertex(
-    x - 19 * s,
-    y - 21 * s,
-    x - 1 * s,
-    y - 33 * s,
-    x + 10 * s,
-    y - 35 * s
-  );
-  bezierVertex(
-    x + 41 * s,
-    y - 40 * s,
-    x + 65 * s,
-    y - 30 * s,
-    x + 89 * s,
-    y - 12 * s
-  );
-  bezierVertex(
-    x + 108 * s,
-    y + 12 * s,
-    x + 110 * s,
-    y + 33 * s,
-    x + 100 * s,
-    y + 56 * s
-  );
-  bezierVertex(
-    x + 97 * s,
-    y + 65 * s,
-    x + 92 * s,
-    y + 72 * s,
-    x + 82 * s,
-    y + 92 * s
-  );
+  bezierVertex(x + 105 * s, y + 70 * s, x + 119 * s, y + 56 * s, x + 127 * s, y + 35 * s);
+  bezierVertex(x + 127 * s, y + 4 * s, x + 115 * s, y - 26 * s, x + 90 * s, y - 41 * s);
+  bezierVertex(x + 77 * s, y - 46 * s, x + 65 * s, y - 50 * s, x + 58 * s, y - 53 * s);
+  bezierVertex(x + 41 * s, y - 57 * s, x + 34 * s, y - 57 * s, x + 23 * s, y - 55 * s);
+  bezierVertex(x + 11 * s, y - 51 * s, x + 5 * s, y - 48 * s, x - 4 * s, y - 42 * s);
+  bezierVertex(x - 17 * s, y - 37 * s, x - 22 * s, y - 30 * s, x - 32 * s, y - 1 * s);
+  bezierVertex(x - 19 * s, y - 21 * s, x - 1 * s, y - 33 * s, x + 10 * s, y - 35 * s);
+  bezierVertex(x + 41 * s, y - 40 * s, x + 65 * s, y - 30 * s, x + 89 * s, y - 12 * s);
+  bezierVertex(x + 108 * s, y + 12 * s, x + 110 * s, y + 33 * s, x + 100 * s, y + 56 * s);
+  bezierVertex(x + 97 * s, y + 65 * s, x + 92 * s, y + 72 * s, x + 82 * s, y + 92 * s);
   endShape();
   pop();
 }
@@ -1722,8 +882,8 @@ function winScreen() {
   text("Mission Accomplished!", 100, 120);
   textSize(20);
   textStyle(ITALIC);
-  text("To restart the Mission press R", 235, 200);
-  maus(380, 400, 1.1);
+  text("To restart the Mission press R", 250, 200);
+  maus(400, 400, 1.1);
 }
 
 function loseScreen() {
@@ -1731,14 +891,14 @@ function loseScreen() {
   background("#000014");
   fill(249, 249, 249);
   textSize(60);
-  text("Mission Failed!", 170, 120);
+  text("Mission Failed!", 180, 120);
   textSize(20);
   textStyle(ITALIC);
   text("To restart the Mission press R", 235, 200);
-  elefant(300, 360, 1.1);
+  elefant(310, 360, 1.1);
 }
 
-let state = "start";
+let state = "win";
 //elefant movement
 let elefantX = 50;
 let elefantY = 300;
@@ -1793,11 +953,9 @@ function draw() {
   if (mausY > 460) {
     isGameActive = false;
   }
-
   //colision of maus and elefant
   distance = int(dist(mausX, mausY, elefantX, elefantY));
   if ((distance < 100 && elefantDirection === "forward") || (distance < 60 && elefantDirection === "backwards")) {
-    //only really works when elefant on the left side, if on the right to far away
     isGameActive = false;
     state = "lose";
     mausY = 100;
@@ -1812,15 +970,14 @@ function draw() {
     velocity = 1;
   }
   //landing perfectly
-if (velocity < 1 && mausY >=460) {
-  isGameActive = false;
+  if (velocity < 1 && mausY >= 460) {
+    isGameActive = false;
     state = "win";
     mausY = 100;
     elefantX = 50;
     velocity = 1;
-}
-
-  //changing of screens
+  }
+  //changing the screens
   if (keyIsDown(32) && state === "start") {
     state = "game";
   } else if (keyIsDown(82) && (state === "lose" || state === "win")) {
