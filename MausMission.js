@@ -1789,6 +1789,7 @@ function draw() {
   if (keyIsDown(32)) {
     velocity = velocity - 0.2;
   }
+  //landing position
   if (mausY > 460) {
     isGameActive = false;
   }
@@ -1803,8 +1804,21 @@ function draw() {
     elefantX = 50;
   }
   //falling to fast
-
+  if (velocity >= 1 && mausY >= 460) {
+    isGameActive = false;
+    state = "lose";
+    mausY = 100;
+    elefantX = 50;
+    velocity = 1;
+  }
   //landing perfectly
+if (velocity < 1 && mausY >=460) {
+  isGameActive = false;
+    state = "win";
+    mausY = 100;
+    elefantX = 50;
+    velocity = 1;
+}
 
   //changing of screens
   if (keyIsDown(32) && state === "start") {
